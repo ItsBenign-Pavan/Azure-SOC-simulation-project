@@ -60,3 +60,83 @@ ThreatIntelIndicators
 ```
 ![Query-4](screenshots/Query-4.png)
 
+---
+## 🔌 Data Connectors Validation Summary
+
+| Connector               | Table Name              | Status    | Validation Method                      |
+|------------------------|------------------------|----------|----------------------------------------|
+| Microsoft Entra ID     | SigninLogs             | ✅ Active | Queried recent sign-in activity        |
+| Microsoft Entra ID     | AuditLogs              | ✅ Active | Verified audit events                  |
+| Threat Intelligence    | ThreatIntelIndicators  | ✅ Active | Retrieved active threat indicators     |
+
+---
+
+## 🎯 Validation Approach
+
+Each configured data connector was validated by:
+
+- Identifying its corresponding Log Analytics table  
+- Running KQL queries to confirm data ingestion  
+- Reviewing sample records to understand data structure  
+- Verifying data freshness using `TimeGenerated`
+
+---
+
+## 🔍 Connector-wise Validation
+
+### 1. Microsoft Entra ID
+
+- **Tables Validated:** SigninLogs, AuditLogs  
+- **Validation Performed:**
+  - Checked recent login activity
+  - Verified failed login attempts
+  - Reviewed administrative operations
+
+#### 📌 Outcome
+Identity-related logs are successfully ingested and available for analysis.
+
+---
+
+### 2. Threat Intelligence
+
+- **Table Validated:** ThreatIntelIndicators  
+- **Validation Performed:**
+  - Queried active indicators
+  - Reviewed confidence scores and threat types
+  - Verified indicator attributes such as IP/domain
+
+#### 📌 Outcome
+Threat intelligence data is successfully ingested and can be used for correlation.
+
+---
+
+## ⚠️ Observations
+
+- Data ingestion depends on connector configuration and activity levels
+- Threat Intelligence requires external feeds or manual input
+- Log volume varies across connectors
+
+---
+
+## 🔐 Security Relevance
+
+- Entra ID logs help detect authentication anomalies
+- Audit logs provide visibility into administrative changes
+- Threat intelligence enables correlation with known malicious entities
+
+---
+
+## 🔗 Correlation Readiness
+
+With multiple connectors validated, the environment is now ready for:
+
+- Cross-source correlation (e.g., Sign-in logs + Threat Intelligence)
+- Detection rule creation
+- Threat hunting activities
+
+---
+
+## ✅ Validation Conclusion
+
+All configured data connectors are successfully ingesting logs into Microsoft Sentinel.  
+The SIEM environment is now operational with multiple data sources and ready for advanced security analysis.
