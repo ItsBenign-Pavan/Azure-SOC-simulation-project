@@ -32,10 +32,20 @@ To establish a secure and well-structured Azure environment for building a SOC l
 
 ## ⚙️ Configuration Details
 
-- Resource Group Name: <your-rg-name>
-- Region: <your-region>
+- Resource Group Name: Pavan-ResourceGroup-Sentinel
+- Region: Central India
 - Subscription: Azure Free Trial
 - Tenant: Default Directory (Microsoft Entra ID)
+
+---
+
+## 🗺️ Resource Visualizer
+
+The following diagram represents the logical structure of resources within the Azure environment, as generated from the Azure Resource Visualizer.
+
+It provides a clear view of how resources are organized and connected within the Resource Group.
+
+![Resource Visualizer](screenshots/Resource-visualizer.png)
 
 ---
 
