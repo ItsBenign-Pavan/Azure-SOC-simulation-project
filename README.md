@@ -55,20 +55,20 @@ VM → Log Analytics Agent → Log Analytics Workspace → Microsoft Sentinel �
 ---
 
 ## 📂 Project Structure
-azure-soc-lab/
-│
-├── README.md
-├── architecture/
-├── screenshots/
-│
-├── 01-azure-setup/
-├── 02-virtual-machine/
-├── 03-sentinel-setup/
-├── 04-log-ingestion/
-├── 05-kql-queries/
-├── 06-detection-rules/
-├── 07-incident-response/
-├── 08-playbooks/
+azure-soc-lab/<br>
+│<br>
+├── README.md<br>
+├── architecture/<br>
+├── screenshots/<br>
+│<br>
+├── 01-azure-setup/<br>
+├── 02-virtual-machine/<br>
+├── 03-sentinel-setup/<br>
+├── 04-log-ingestion/<br>
+├── 05-kql-queries/<br>
+├── 06-detection-rules/<br>
+├── 07-incident-response/<br>
+├── 08-playbooks/<br>
 
 
 ---
