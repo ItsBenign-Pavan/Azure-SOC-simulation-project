@@ -27,3 +27,13 @@ SigninLogs
 | take 10
 ```
 ![Query-1](screenshots/Query-1.png)
+
+### 1. Validate Sign-in Logs Ingestion
+#### 📌 Purpose
+To confirm that identity logs from Microsoft Entra ID are being ingested into the workspace.
+```kql
+SigninLogs
+| sort by TimeGenerated desc
+| project TimeGenerated, UserPrincipalName, AppDisplayName, IPAddress, ResultType
+```
+![Query-1](screenshots/Query-1.png)
