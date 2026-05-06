@@ -73,4 +73,4 @@ Successfully established a structured Azure environment with identity management
 ---
 
 ## 🔗 Next Step
-Proceeding to deploy a Virtual Machine that will act as a monitored endpoint for generating security events.
+Proceeding to configure Microsoft Sentinel to establish a centralized monitoring and SIEM capability.
