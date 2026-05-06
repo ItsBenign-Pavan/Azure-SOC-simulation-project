@@ -48,18 +48,6 @@ To establish a secure and well-structured Azure environment for building a SOC l
 
 ---
 
-## 📸 Screenshots
-(Add screenshots in `/screenshots` folder)
-
-- Azure Portal Dashboard
-- Microsoft Entra ID Overview
-- Resource Group Creation Page
-
-Example:
-![Resource Group](../screenshots/resource-group.png)
-
----
-
 ## ✅ Outcome
 Successfully established a structured Azure environment with identity management and resource organization, forming the foundation for SOC lab deployment.
 
