@@ -98,4 +98,4 @@ Successfully deployed Microsoft Sentinel and prepared the environment for ingest
 ---
 
 ## 🔗 Next Step
-Proceeding to deploy a Virtual Machine to generate security events and enable log ingestion. 
+Proceeding to configure data connectors to enable log ingestion into Microsoft Sentinel.
