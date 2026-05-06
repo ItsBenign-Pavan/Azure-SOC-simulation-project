@@ -80,7 +80,7 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
 - Explored available connectors
 - Identified Windows Security Events as primary data source (to be configured in next phase)
 
-![Sentinel Connctors](screenshots/Sentinel-connectors.png)
+![Sentinel Connectors](screenshots/Data-connectors.png)
 
 ---
 
