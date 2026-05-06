@@ -11,6 +11,8 @@ To establish a secure and well-structured Azure environment for building a SOC l
 - Created a Microsoft Azure account using the free trial subscription
 - Verified billing and subscription access
 
+![Resource Group](screenshots/Azure-account.png)
+
 ### 2. Identity Configuration (Microsoft Entra ID)
 - Accessed Microsoft Entra ID (formerly Azure Active Directory)
 - Reviewed tenant details and default directory configuration
