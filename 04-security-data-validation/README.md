@@ -140,3 +140,8 @@ With multiple connectors validated, the environment is now ready for:
 
 All configured data connectors are successfully ingesting logs into Microsoft Sentinel.  
 The SIEM environment is now operational with multiple data sources and ready for advanced security analysis.
+
+---
+
+## 🔗 Next Step
+Proceeding to deploy and configure a Virtual Machine to act as a monitored endpoint for generating security events and expanding log coverage.
