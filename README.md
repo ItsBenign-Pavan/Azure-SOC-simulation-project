@@ -1,20 +1,38 @@
-# 🔐 Azure SOC Lab
+## 🎯 Project Objectives
 
-## 📌 Overview
-This project is a hands-on **Azure Security Operations Center (SOC) lab** where I implement and demonstrate real-world cloud security practices using Microsoft Azure.
+This project is designed to simulate a real-world SOC environment by focusing on **threat detection, investigation, and response** rather than just resource deployment.
 
-The lab focuses on building a monitoring and detection environment using **Microsoft Sentinel**, simulating security events, and performing log analysis and incident response.
+Key objectives include:
 
----
+- 🔍 **Simulate Real Attack Scenarios**
+  - Generate brute-force login attempts (Event ID 4625)
+  - Emulate suspicious activity on a monitored VM
 
-## 🎯 Objectives
-- Deploy and configure Azure resources (VM, networking)
-- Set up and configure Microsoft Sentinel (SIEM)
-- Ingest and analyze logs using Log Analytics
-- Write KQL queries for threat detection
-- Create analytics rules and alerts
-- Simulate attacks (e.g., failed logins, brute force)
-- Perform basic incident investigation and response
+- 📥 **Centralize and Normalize Logs**
+  - Ingest Windows Security Events into Log Analytics Workspace
+  - Ensure visibility across endpoints using Microsoft Sentinel
+
+- 🧠 **Develop Threat Detection Logic**
+  - Write KQL queries to identify anomalies and suspicious patterns
+  - Detect brute-force attempts, account misuse, and abnormal behaviors
+
+- 🚨 **Build Detection & Alerting Mechanisms**
+  - Create analytics rules to trigger alerts based on attack patterns
+  - Tune rules to reduce false positives
+
+- 🧾 **Perform Incident Investigation**
+  - Analyze alerts generated in Microsoft Sentinel
+  - Correlate logs to understand attack timeline and impact
+
+- ⚡ **Automate Response (SOAR)**
+  - Design playbooks using Logic Apps
+  - Automate actions like alert notifications or IP blocking
+
+- 🎯 **Map Detections to MITRE ATT&CK Framework**
+  - Align attack simulations with real-world tactics (e.g., Credential Access, Initial Access)
+
+- 📊 **Build Security Visibility**
+  - Create dashboards/workbooks for monitoring threats and trends
 
 ---
 
