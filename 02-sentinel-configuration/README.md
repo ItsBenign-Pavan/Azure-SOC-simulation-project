@@ -58,9 +58,9 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
 
 ## ⚙️ Configuration Details
 
-- Workspace Name: <your-workspace-name>
-- Region: <your-region>
-- Resource Group: <your-rg-name>
+- Workspace Name: Pavan-LogWorkspace-Sentinel
+- Region: Central India
+- Resource Group: Pavan-ResourceGroup-Sentinel
 
 ---
 
@@ -80,17 +80,7 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
 - Explored available connectors
 - Identified Windows Security Events as primary data source (to be configured in next phase)
 
----
-
-## 📸 Screenshots
-(Add images in `/screenshots` folder)
-
-- Sentinel Overview
-- Log Analytics Workspace
-- Data Connectors Page
-
-Example:
-![Sentinel Dashboard](screenshots/sentinel-dashboard.png)
+![Sentinel Connctors](screenshots/Sentinel-connectors.png)
 
 ---
 
