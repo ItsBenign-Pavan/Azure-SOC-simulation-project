@@ -15,9 +15,10 @@ This step establishes the foundation for endpoint-level visibility and future at
 - Both machines are configured to send logs to Log Analytics Workspace using Azure Monitor Agent (AMA)
 
 #### 📸 Architecture Overview
-*(Add Resource Visualizer screenshots here)*
-![Windows VM Architecture](screenshots/WindowsServer-Visualizer.png)
-![Linux VM Architecture](screenshots/LinuxServer-Visualizer.png)
+<p align="center">
+  <img src="screenshots/WindowsServer-Visualizer.png" alt="Windows VM Architecture" width="45%"/>
+  <img src="screenshots/LinuxServer-Visualizer.png" alt="Linux VM Architecture" width="45%"/>
+</p>
 
 ---
 
