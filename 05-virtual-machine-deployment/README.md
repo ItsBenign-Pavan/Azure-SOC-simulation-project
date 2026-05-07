@@ -90,13 +90,9 @@ To act as log-generating endpoints for authentication events, system activity, a
 
 - Explored onboarding of non-Azure machines using **Azure Arc**
 - #### 📌 Note
-While Azure Arc enables onboarding of non-Azure machines (such as personal or on-premises systems) for centralized monitoring, a personal device was not onboarded in this project due to privacy and security considerations.  
+  While Azure Arc enables onboarding of non-Azure machines (such as personal or on-premises systems) for centralized monitoring, a personal device was not onboarded in this project due to privacy and security considerations.  
 
-Ingesting logs from a personal machine may expose sensitive user activity, installed applications, and system behavior. Therefore, a controlled Azure Virtual Machine environment was preferred to ensure isolation, data safety, and repeatability of security testing.
-
-#### 📸 Screenshot
-*(Add Azure Arc onboarding screen if available)*
-![Azure Arc](screenshots/azure-arc.png)
+  Ingesting logs from a personal machine may expose sensitive user activity, installed applications, and system behavior. Therefore, a controlled Azure Virtual Machine environment was preferred to ensure isolation, data safety, and repeatability of security testing.
 
 #### 📌 Understanding
 - Azure Arc enables onboarding of on-prem or external machines
@@ -106,6 +102,33 @@ Ingesting logs from a personal machine may expose sensitive user activity, insta
 To understand how Sentinel can monitor non-Azure resources.
 
 ---
+
+### 5. Connection Validation
+
+Successfully connected to both Virtual Machines to verify accessibility, operating system details, and endpoint readiness for security monitoring.
+
+### 🖥️ Windows Server Connection
+
+  #### Commands Executed
+  ```powershell
+  whoami
+  hostname
+  systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+  ```
+  <img src="screenshots/RDP-Windows.png" width="75%"/>
+
+### 🐧 Linux Server Connection
+
+  #### Commands Executed
+  ```powershell
+  ssh azureuser@<public-ip of linux VM>
+  
+  whoami
+  hostname
+  cat /etc/os-release
+  ```
+  <img src="screenshots/SSH-Linux.png" width="75%"/>
+  
 
 ## 🔍 Validation Approach
 
