@@ -71,19 +71,15 @@ To control and standardize log ingestion from multiple sources.
 - OS: Windows Server 2022 Datacenter (Azure Edition)
 - Size: Standard B2als v2 (2 vCPUs, 4 GB RAM)
 
-#### 📸 Screenshot
-*(Add Windows VM Overview screenshot here)*
-![Windows VM Overview](screenshots/windows-vm.png)
+  ![Windows VM Overview](screenshots/VM-Windows.png)
 
 ---
 
 #### 🐧 Linux VM
 - OS: Ubuntu 24.04 LTS
 - Size: Standard B2als v2 (2 vCPUs, 4 GB RAM)
-
-#### 📸 Screenshot
-*(Add Linux VM Overview screenshot here)*
-![Linux VM Overview](screenshots/linux-vm.png)
+  
+  ![Linux VM Overview](screenshots/VM-Linux.png)
 
 #### 📌 Purpose
 To act as log-generating endpoints for authentication events, system activity, and future attack simulations.
