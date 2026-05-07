@@ -29,11 +29,10 @@ This step establishes the foundation for endpoint-level visibility and future at
 - Installed and configured **Azure Monitor Agent (AMA)** for:
   - Windows Security Events (For Windows)
   - Syslog (For Linux)
+
+<img src="screenshots/AMA-Windows.png" alt="AMA-Windows" width="800"/>
+<img src="screenshots/AMA-Linux.png" alt="AMA-Linux" width="1000"/>
  
-  <p align="center">
-  <img src="screenshots/AMA-Windows.png" alt="Windows AMA" width="45%"/>
-  <img src="screenshots/AMA-Linux.png" alt="Linux AMA" width="45%"/>
-</p>
 
 #### 📌 Purpose
 To enable secure and scalable log collection from both Windows and Linux systems into Microsoft Sentinel.
