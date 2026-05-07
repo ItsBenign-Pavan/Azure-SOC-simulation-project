@@ -96,4 +96,4 @@ Successfully integrated multiple data sources into Microsoft Sentinel, enabling 
 ---
 
 ## 🔗 Next Step
-Proceeding to deploy and configure a Virtual Machine to generate additional security events for analysis.
+Proceeding to validate connector functionality and verify security data ingestion using KQL queries within Microsoft Sentinel.
