@@ -27,12 +27,13 @@ This step establishes the foundation for endpoint-level visibility and future at
 ### 1. Azure Monitor Agent (AMA) Configuration
 
 - Installed and configured **Azure Monitor Agent (AMA)** for:
-  - Windows Security Events
-  - Syslog (Linux)
-
-#### 📸 Screenshot
-*(Add AMA / Data Connector screenshots here)*
-![AMA Configuration](screenshots/ama-config.png)
+  - Windows Security Events (For Windows)
+  - Syslog (For Linux)
+ 
+  <p align="center">
+  <img src="screenshots/AMA-Windows.png" alt="Windows AMA" width="45%"/>
+  <img src="screenshots/AMA-Linux.png" alt="Linux AMA" width="45%"/>
+</p>
 
 #### 📌 Purpose
 To enable secure and scalable log collection from both Windows and Linux systems into Microsoft Sentinel.
