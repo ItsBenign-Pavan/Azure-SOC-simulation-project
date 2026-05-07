@@ -49,16 +49,16 @@ To enable secure and scalable log collection from both Windows and Linux systems
 #### 📌 Configuration Highlights
 - Windows:
   - Security Event Logs (login events, account activity)
+    
     <img src="screenshots/DCR-Windows.png" alt="DCR-Windows" width="800"/>
     <img src="screenshots/DCR-Windows-Visualizer.png" alt="DCR-Windows-Visualizer" width="1000"/>
+    
 - Linux:
   - Syslog (auth, system logs)
+    
     <img src="screenshots/DCR-Linux.png" alt="DCR-Linux" width="800"/>
     <img src="screenshots/DCR-Linux-Visualizer.png" alt="DCR-Linux-Visualizer" width="1000"/>
 
-#### 📸 Screenshot
-*(Add DCR Overview screenshot here)*
-![DCR Overview](screenshots/dcr-overview.png)
 
 #### 📌 Purpose
 To control and standardize log ingestion from multiple sources.
