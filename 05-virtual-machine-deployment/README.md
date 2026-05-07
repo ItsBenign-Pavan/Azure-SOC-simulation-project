@@ -26,7 +26,7 @@ This step establishes the foundation for endpoint-level visibility and future at
 
 ### 1. Azure Monitor Agent (AMA) Configuration
 
-- Installed and configured **Azure Monitor Agent (AMA)** for:
+- Installed and configured **Azure Monitor Agent (AMA)**:
   - Windows Security Events (For Windows)
   - Syslog (For Linux)
 
