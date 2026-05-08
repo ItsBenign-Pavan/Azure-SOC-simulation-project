@@ -16,8 +16,8 @@ This step establishes the foundation for endpoint-level visibility and future at
 
 #### 📸 Architecture Overview
 <p align="center">
-  <img src="screenshots/WindowsServer-Visualizer.png" alt="Windows VM Architecture" width="45%"/>
-  <img src="screenshots/LinuxServer-Visualizer.png" alt="Linux VM Architecture" width="45%"/>
+  <img src="screenshots/WindowsServer-Visualizer.png" alt="Windows VM Architecture" width="40%"/>
+  <img src="screenshots/LinuxServer-Visualizer.png" alt="Linux VM Architecture" width="40%"/>
 </p>
 
 ---
@@ -30,8 +30,8 @@ This step establishes the foundation for endpoint-level visibility and future at
   - Windows Security Events (For Windows)
   - Syslog (For Linux)
 
-<img src="screenshots/AMA-Windows.png" alt="AMA-Windows" width="800"/>
-<img src="screenshots/AMA-Linux.png" alt="AMA-Linux" width="1000"/>
+<img src="screenshots/AMA-Windows.png" alt="AMA-Windows" width="70%"/>
+<img src="screenshots/AMA-Linux.png" alt="AMA-Linux" width="80%"/>
  
 
 #### 📌 Purpose
@@ -50,14 +50,14 @@ To enable secure and scalable log collection from both Windows and Linux systems
 - Windows:
   - Security Event Logs (login events, account activity)
     
-    <img src="screenshots/DCR-Windows.png" alt="DCR-Windows" width="800"/>
-    <img src="screenshots/DCR-Windows-Visualizer.png" alt="DCR-Windows-Visualizer" width="1000"/>
+    <img src="screenshots/DCR-Windows.png" alt="DCR-Windows" width="80%"/>
+    <img src="screenshots/DCR-Windows-Visualizer.png" alt="DCR-Windows-Visualizer" width="80%"/>
     
 - Linux:
   - Syslog (auth, system logs)
     
-    <img src="screenshots/DCR-Linux.png" alt="DCR-Linux" width="800"/>
-    <img src="screenshots/DCR-Linux-Visualizer.png" alt="DCR-Linux-Visualizer" width="1000"/>
+    <img src="screenshots/DCR-Linux.png" alt="DCR-Linux" width="80%"/>
+    <img src="screenshots/DCR-Linux-Visualizer.png" alt="DCR-Linux-Visualizer" width="80%"/>
 
 
 #### 📌 Purpose
@@ -71,7 +71,7 @@ To control and standardize log ingestion from multiple sources.
 - OS: Windows Server 2022 Datacenter (Azure Edition)
 - Size: Standard B2als v2 (2 vCPUs, 4 GB RAM)
 
-  ![Windows VM Overview](screenshots/VM-Windows.png)
+  <img src="screenshots/VM-Windows.png" alt="DCR-Linux" width="80%"/>
 
 ---
 
@@ -79,7 +79,7 @@ To control and standardize log ingestion from multiple sources.
 - OS: Ubuntu 24.04 LTS
 - Size: Standard B2als v2 (2 vCPUs, 4 GB RAM)
   
-  ![Linux VM Overview](screenshots/VM-Linux.png)
+  <img src="screenshots/VM-Linux.png" alt="DCR-Linux" width="80%"/>
 
 #### 📌 Purpose
 To act as log-generating endpoints for authentication events, system activity, and future attack simulations.
