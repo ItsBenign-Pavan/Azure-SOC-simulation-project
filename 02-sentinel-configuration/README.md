@@ -11,7 +11,7 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
 - Created a Log Analytics Workspace to store and analyze security logs
 - Ensured it is aligned with the existing Resource Group
 
-![Log Workspace](screenshots/Log-workspace.png)
+<img src="screenshots/Log-workspace.png" width="90%"/>
 
 ### 2. Microsoft Sentinel Enablement & Configuration
 
@@ -44,7 +44,7 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
   - No alerts or incidents are generated yet
   - Detection capabilities will be implemented after connecting data sources
  
-![Sentinel Overview](screenshots/Sentinel-overview.png)
+<img src="screenshots/Sentinel-overview.png" width="90%"/>
  
 ### 3. Initial Exploration
 - Navigated through Sentinel dashboard
@@ -80,7 +80,7 @@ To deploy and configure Microsoft Sentinel as a SIEM platform for centralized lo
 - Explored available connectors
 - Identified Windows Security Events as primary data source (to be configured in next phase)
 
-![Sentinel Connectors](screenshots/Data-connectors.png)
+<img src="screenshots/Data-connectors.png" width="90%"/>
 
 ---
 
