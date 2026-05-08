@@ -26,7 +26,7 @@ To confirm that identity logs from Microsoft Entra ID are being ingested into th
 SigninLogs
 | take 10
 ```
-![Query-1](screenshots/Query-1.png)
+<img src="screenshots/Query-1.png" width="90%"/>
 
 ### 2. Recent Sign-in Activity
 #### 📌 Purpose
@@ -36,7 +36,7 @@ SigninLogs
 | sort by TimeGenerated desc
 | project TimeGenerated, UserPrincipalName, AppDisplayName, IPAddress, ResultType
 ```
-![Query-2](screenshots/Query-2.png)
+<img src="screenshots/Query-2.png" width="90%"/>
 
 ### 3. Active Threat Intelligence Indicators Overview
 #### 📌 Purpose
@@ -47,7 +47,7 @@ ThreatIntelIndicators
 | project TimeGenerated, ObservableValue, SourceSystem, Type, Confidence, IsDeleted, Tags
 | sort by TimeGenerated desc
 ```
-![Query-3](screenshots/Query-3.png)
+<img src="screenshots/Query-3.png" width="90%"/>
 
 ### 4. High Confidence Threats
 #### 📌 Purpose
@@ -58,7 +58,7 @@ ThreatIntelIndicators
 | project ObservableValue, Type, Confidence, IsActive, IsDeleted, Tags
 | sort by Confidence desc
 ```
-![Query-4](screenshots/Query-4.png)
+<img src="screenshots/Query-4.png" width="90%"/>
 
 ---
 ## 🔌 Data Connectors Validation Summary
