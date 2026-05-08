@@ -10,8 +10,8 @@ To establish a secure and well-structured Azure environment for building a SOC l
 ### 1. Azure Account Setup
 - Created a Microsoft Azure account using the free trial subscription
 - Verified billing and subscription access
-
-![Azure Account](screenshots/Azure-account.png)
+  
+<img src="screenshots/Azure-account.png" width="90%"/>
 
 ### 2. Identity Configuration (Microsoft Entra ID)
 - Accessed Microsoft Entra ID (formerly Azure Active Directory)
@@ -19,14 +19,14 @@ To establish a secure and well-structured Azure environment for building a SOC l
 - Explored user and role management features
 - Understood role-based access control (RBAC) for secure administration
 
-![Entra ID](screenshots/Entra-ID.png)
+<img src="screenshots/Entra-ID.png" width="90%"/>
 
 ### 3. Resource Group Creation
 - Created a dedicated Resource Group for the SOC lab
 - Selected appropriate region based on availability and latency
 - Used naming conventions for better resource management
 
-![Resource Group](screenshots/Resource-group.png)
+<img src="screenshots/Resource-group.png" width="90%"/>
 
 ---
 
@@ -45,7 +45,7 @@ The following diagram represents the logical structure of resources within the A
 
 It provides a clear view of how resources are organized and connected within the Resource Group.
 
-![Resource Visualizer](screenshots/Resource-visualizer.png)
+<img src="screenshots/Resource-visualizer.png" width="80%"/>
 
 ---
 
