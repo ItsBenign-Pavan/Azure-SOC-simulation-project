@@ -57,7 +57,7 @@ Heartbeat
 ```
 
 #### 📸 Screenshot
-<img src="screenshots/heartbeat-validation.png" width="80%"/>
+<img src="screenshots/Heartbeat-validation.png" width="80%"/>
 
 #### 📌 Purpose
 To verify that monitored endpoints are actively communicating with the Log Analytics Workspace through Azure Monitor Agent.
@@ -80,7 +80,7 @@ SecurityEvent
 ```
 
 #### 📸 Screenshot
-<img src="screenshots/windows-securityevent-validation.png" width="80%"/>
+<img src="screenshots/Security-events.png" width="80%"/>
 
 #### 📌 Purpose
 To validate successful ingestion of Windows Security Events generated from the Windows Server endpoint.
@@ -103,7 +103,7 @@ Syslog
 ```
 
 #### 📸 Screenshot
-<img src="screenshots/linux-syslog-validation.png" width="80%"/>
+<img src="screenshots/Syslog-events.png" width="80%"/>
 
 #### 📌 Purpose
 To validate successful ingestion of Linux Syslog events from the Ubuntu Virtual Machine.
@@ -125,7 +125,7 @@ union SecurityEvent, Syslog
 ```
 
 #### 📸 Screenshot
-<img src="screenshots/data-freshness-validation.png" width="80%"/>
+<img src="screenshots/Telemetry-freshness.png" width="80%"/>
 
 #### 📌 Purpose
 To verify near real-time telemetry ingestion from monitored endpoints.
