@@ -13,8 +13,8 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
 - Configured collection of:
   - Sign-in logs
   - Audit logs
-
-![Entra ID Connector](screenshots/EntraID-data-connector.png)
+  - 
+<img src="screenshots/EntraID-data-connector.png" width="90%"/>
 
 #### 🔍 Importance
 - Helps detect suspicious login attempts
@@ -29,6 +29,7 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
 - Enabled ingestion of security alerts and incidents
 
 ![Entra ID Connector](screenshots/XDR-data-connector.png)
+<img src="screenshots/Other-data-connector.png" width="90%"/>
 
 #### 🔍 Importance
 - Provides endpoint-level visibility
@@ -46,6 +47,7 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
   - Known threat indicators
  
 ![Entra ID Connector](screenshots/ThreatIntel-data-connector.png)
+<img src="screenshots/Other-data-connector.png" width="90%"/>
 
 #### 🔍 Importance
 - Enhances detection by correlating logs with known threats
@@ -60,6 +62,7 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
 - Identified potential future integrations (e.g., Azure Activity, Office 365)
 
 ![Entra ID Connector](screenshots/Other-data-connectors.png)
+<img src="screenshots/Other-data-connector.png" width="90%"/>
 
 ---
 
