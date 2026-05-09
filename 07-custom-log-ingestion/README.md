@@ -80,9 +80,7 @@ A dedicated application registration was created in Microsoft Entra ID.
 
 _Add screenshot here_
 
-```md
-![App Registration](screenshots/app-registration.png)
-```
+<img src="screenshots/App-registration.png" alt="App-registration" width="80%">
 
 ---
 
