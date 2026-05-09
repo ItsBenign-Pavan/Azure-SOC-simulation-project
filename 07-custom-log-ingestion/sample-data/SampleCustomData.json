@@ -1,0 +1,170 @@
+[
+  {
+    "TimeGenerated": "2026-05-09T08:00:12Z",
+    "User": "alex.johnson@contoso.com",
+    "Activity": "File Created",
+    "ip_address": "192.168.1.10",
+    "destination_ip": "10.0.0.5",
+    "Profile": "Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:05:33Z",
+    "User": "sarah.miller@contoso.com",
+    "Activity": "Failed Login Attempt",
+    "ip_address": "192.168.1.15",
+    "destination_ip": "10.0.0.8",
+    "Profile": "SOC Analyst"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:12:21Z",
+    "User": "john.smith@contoso.com",
+    "Activity": "Privilege Escalation",
+    "ip_address": "192.168.1.22",
+    "destination_ip": "10.0.0.11",
+    "Profile": "Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:18:49Z",
+    "User": "emma.wilson@contoso.com",
+    "Activity": "File Deleted",
+    "ip_address": "192.168.1.25",
+    "destination_ip": "10.0.0.14",
+    "Profile": "HR"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:25:14Z",
+    "User": "michael.brown@contoso.com",
+    "Activity": "VPN Connection",
+    "ip_address": "192.168.1.30",
+    "destination_ip": "10.0.0.18",
+    "Profile": "Employee"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:31:45Z",
+    "User": "olivia.davis@contoso.com",
+    "Activity": "Password Changed",
+    "ip_address": "192.168.1.35",
+    "destination_ip": "10.0.0.22",
+    "Profile": "Agent"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:40:08Z",
+    "User": "daniel.moore@contoso.com",
+    "Activity": "Account Locked",
+    "ip_address": "192.168.1.40",
+    "destination_ip": "10.0.0.25",
+    "Profile": "Finance"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:48:27Z",
+    "User": "sophia.taylor@contoso.com",
+    "Activity": "File Uploaded",
+    "ip_address": "192.168.1.44",
+    "destination_ip": "10.0.0.28",
+    "Profile": "Developer"
+  },
+  {
+    "TimeGenerated": "2026-05-09T08:55:16Z",
+    "User": "william.anderson@contoso.com",
+    "Activity": "USB Device Connected",
+    "ip_address": "192.168.1.47",
+    "destination_ip": "10.0.0.31",
+    "Profile": "Support"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:01:03Z",
+    "User": "ava.thomas@contoso.com",
+    "Activity": "Remote Desktop Login",
+    "ip_address": "192.168.1.50",
+    "destination_ip": "10.0.0.34",
+    "Profile": "Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:08:12Z",
+    "User": "james.jackson@contoso.com",
+    "Activity": "Firewall Rule Modified",
+    "ip_address": "192.168.1.52",
+    "destination_ip": "10.0.0.37",
+    "Profile": "Security Engineer"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:12:19Z",
+    "User": "mia.white@contoso.com",
+    "Activity": "Application Installed",
+    "ip_address": "192.168.1.54",
+    "destination_ip": "10.0.0.40",
+    "Profile": "Employee"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:17:56Z",
+    "User": "benjamin.harris@contoso.com",
+    "Activity": "Suspicious PowerShell Execution",
+    "ip_address": "192.168.1.56",
+    "destination_ip": "10.0.0.42",
+    "Profile": "Developer"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:24:11Z",
+    "User": "charlotte.martin@contoso.com",
+    "Activity": "Multiple Failed Logins",
+    "ip_address": "192.168.1.58",
+    "destination_ip": "10.0.0.45",
+    "Profile": "Agent"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:30:43Z",
+    "User": "lucas.thompson@contoso.com",
+    "Activity": "Service Restarted",
+    "ip_address": "192.168.1.60",
+    "destination_ip": "10.0.0.48",
+    "Profile": "IT Support"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:38:55Z",
+    "User": "amelia.garcia@contoso.com",
+    "Activity": "Database Access",
+    "ip_address": "192.168.1.62",
+    "destination_ip": "10.0.0.51",
+    "Profile": "Database Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:44:18Z",
+    "User": "henry.martinez@contoso.com",
+    "Activity": "Policy Updated",
+    "ip_address": "192.168.1.65",
+    "destination_ip": "10.0.0.54",
+    "Profile": "Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:50:29Z",
+    "User": "evelyn.robinson@contoso.com",
+    "Activity": "Email Attachment Downloaded",
+    "ip_address": "192.168.1.68",
+    "destination_ip": "10.0.0.57",
+    "Profile": "Employee"
+  },
+  {
+    "TimeGenerated": "2026-05-09T09:58:02Z",
+    "User": "alexander.clark@contoso.com",
+    "Activity": "File Renamed",
+    "ip_address": "192.168.1.70",
+    "destination_ip": "10.0.0.60",
+    "Profile": "Developer"
+  },
+  {
+    "TimeGenerated": "2026-05-09T10:03:47Z",
+    "User": "harper.lewis@contoso.com",
+    "Activity": "User Added",
+    "ip_address": "192.168.1.73",
+    "destination_ip": "10.0.0.63",
+    "Profile": "Admin"
+  },
+  {
+    "TimeGenerated": "2026-05-09T10:08:12Z",
+    "User": "ethan.walker@contoso.com",
+    "Activity": "File Downloaded",
+    "ip_address": "192.168.1.75",
+    "destination_ip": "10.0.0.66",
+    "Profile": "Employee"
+  }
+]
