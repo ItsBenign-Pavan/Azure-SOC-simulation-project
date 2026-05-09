@@ -14,5 +14,5 @@ The dataset contains simulated:
 ### Dataset Location
 
 ```text
-sample-data/sample-security-logs.json
+sample-data/SampleCustomData.json
 ```
