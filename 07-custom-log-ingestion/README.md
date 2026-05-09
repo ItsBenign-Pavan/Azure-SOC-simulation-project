@@ -1,4 +1,4 @@
-# 🚀 Milestone 07 — Custom Log Ingestion using DCE, DCR & Logs Ingestion API
+# 🚀 Custom Log Ingestion using DCE, DCR & Logs Ingestion API
 
 ## 📌 Objective
 
