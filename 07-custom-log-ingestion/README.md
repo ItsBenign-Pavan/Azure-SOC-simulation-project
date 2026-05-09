@@ -324,6 +324,7 @@ CustomDataIngestionTable_CL
 | project TimeGenerated, User, Activity, ip_address, destination_ip, Profile
 | sort by TimeGenerated desc
 ```
+<img src="screenshots/Query-1.png" alt="Query-1" width="80%">
 
 ### 📌 Purpose
 
@@ -338,6 +339,7 @@ CustomDataIngestionTable_CL
 | summarize EventCount=count() by Activity
 | sort by EventCount desc
 ```
+<img src="screenshots/Query-2.png" alt="Query-2" width="80%">
 
 ### 📌 Purpose
 
@@ -353,6 +355,7 @@ CustomDataIngestionTable_CL
 | project TimeGenerated, User, Activity, ip_address
 | sort by TimeGenerated desc
 ```
+<img src="screenshots/Query-3.png" alt="Query-3" width="80%">
 
 ### 📌 Purpose
 
@@ -368,34 +371,11 @@ CustomDataIngestionTable_CL
 | project TimeGenerated, User, ip_address
 | sort by TimeGenerated desc
 ```
+<img src="screenshots/Query-4.png" alt="Query-4" width="80%">
 
 ### 📌 Purpose
 
 To identify suspicious authentication attempts and failed login activity.
-
----
-
-## 📌 Query 5 — Ingestion Timeline Visualization
-
-```kql
-CustomDataIngestionTable_CL
-| summarize Events=count() by bin(TimeGenerated, 1h)
-| render timechart
-```
-
-### 📌 Purpose
-
-To visualize custom log ingestion trends over time.
-
----
-
-# 📸 KQL Validation Results
-
-_Add screenshots here_
-
-```md
-![KQL Validation](screenshots/kql-validation.png)
-```
 
 ---
 
