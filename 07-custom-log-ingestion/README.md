@@ -240,6 +240,12 @@ The following sample telemetry was used for ingestion testing.
 }
 ```
 
+Dataset Location
+
+```text
+sample-data/SampleCustomData.json
+```
+
 ---
 
 # 🚀 Sending Logs using Postman
