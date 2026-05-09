@@ -116,8 +116,6 @@ This permission allows the application to push telemetry data into Azure Monitor
 
 ### 📸 IAM Role Assignment
 
-_Add screenshot here_
-
 <img src="screenshots/Permissions.png" alt="Permissions" width="80%">
 
 ---
@@ -157,11 +155,7 @@ The OAuth 2.0 Client Credentials flow was configured in Postman to generate bear
 
 ### 📸 OAuth Token Generation
 
-_Add screenshot here_
-
-```md
-![OAuth Token](screenshots/oauth-token.png)
-```
+<img src="screenshots/OAuth.png" alt="OAuth" width="80%">
 
 ---
 
@@ -179,11 +173,7 @@ A dedicated Data Collection Endpoint (DCE) was configured to securely receive cu
 
 ### 📸 DCE Overview
 
-_Add screenshot here_
-
-```md
-![DCE Overview](screenshots/dce-overview.png)
-```
+<img src="screenshots/DCE.png" alt="DCE" width="80%">
 
 ---
 
@@ -201,21 +191,10 @@ A Data Collection Rule (DCR) was configured to define ingestion behavior and rou
 
 ---
 
-## ✅ Custom Stream Used
-
-```text
-Custom-SecurityLogs
-```
-
----
 
 ### 📸 DCR Overview
 
-_Add screenshot here_
-
-```md
-![DCR Overview](screenshots/dcr-overview.png)
-```
+<img src="screenshots/CustomDCR-ID.png" alt="DCR" width="80%">
 
 ---
 
@@ -240,11 +219,9 @@ A DCR-based custom log table was created in Log Analytics Workspace for storing 
 
 ### 📸 Custom Table Schema
 
-_Add screenshot here_
-
-```md
-![Custom Table Schema](screenshots/custom-table-schema.png)
-```
+<img src="screenshots/Custom-Table.png" alt="CustomTable" width="80%">
+<img src="screenshots/CustomTable-schema.png" alt="CustomTable-schema" width="80%">
+<img src="screenshots/SampleCustomData-upload.png" alt="SampleCustomData-upload" width="80%">
 
 ---
 
@@ -281,12 +258,42 @@ Postman was used to send custom telemetry to the Azure Monitor Logs Ingestion AP
 
 ### 📸 Postman Request Configuration
 
-_Add screenshot here_
+### ✅ Request Method
 
-```md
-![Postman Request](screenshots/postman-request.png)
+```text
+POST
 ```
 
+---
+
+### ✅ API Endpoint Structure
+
+```text
+https://<DCE-URI>/dataCollectionRules/<DCR-Immutable-ID>/streams/Custom-SecurityLogs?api-version=2023-01-01
+```
+
+---
+
+### ✅ Authorization Configuration
+
+| Parameter | Purpose |
+|---|---|
+| Grant Type | Client Credentials |
+| Tenant ID | Azure tenant identification |
+| Client ID | Application authentication |
+| Client Secret | Secure API authentication |
+| Scope | Azure Monitor authorization |
+
+---
+
+### ✅ Required Headers
+
+| Header | Value |
+|---|---|
+| Content-Type | application/json |
+| Authorization | Bearer Token |
+
+---
 ---
 
 # ✅ Successful API Response
@@ -303,11 +310,7 @@ which confirms that Azure accepted the logs successfully.
 
 ### 📸 Successful API Response
 
-_Add screenshot here_
-
-```md
-![API Success Response](screenshots/api-success-response.png)
-```
+<img src="screenshots/Postman-request.png" alt="Postman-request" width="80%">
 
 ---
 
