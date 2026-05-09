@@ -211,4 +211,4 @@ The environment is now operational for:
 
 ## 🔗 Next Step
 
-Proceeding to generate authentication-based attack scenarios and analyze resulting security events within Microsoft Sentinel.
+Proceeding to implement custom log ingestion using Data Collection Endpoints (DCE), Data Collection Rules (DCR), Microsoft Entra ID App Registration, and the Azure Monitor Logs Ingestion API.
