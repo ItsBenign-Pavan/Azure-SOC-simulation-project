@@ -78,8 +78,6 @@ A dedicated application registration was created in Microsoft Entra ID.
 
 ### 📸 App Registration Overview
 
-_Add screenshot here_
-
 <img src="screenshots/App-registration.png" alt="App-registration" width="80%">
 
 ---
@@ -98,11 +96,7 @@ The following values were collected and securely stored:
 
 ### 📸 Client Secret Configuration
 
-_Add screenshot here_
-
-```md
-![Client Secret](screenshots/client-secret.png)
-```
+<img src="screenshots/Secrets.png" alt="Secrets" width="80%">
 
 ---
 
@@ -124,9 +118,7 @@ This permission allows the application to push telemetry data into Azure Monitor
 
 _Add screenshot here_
 
-```md
-![IAM Role Assignment](screenshots/iam-role-assignment.png)
-```
+<img src="screenshots/Permissions.png" alt="Permissions" width="80%">
 
 ---
 
