@@ -416,4 +416,4 @@ To identify suspicious authentication attempts and failed login activity.
 
 # 🔗 Next Step
 
-Proceeding to simulate attack scenarios between Linux and Windows virtual machines to generate real security telemetry for threat detection and incident investigation.
+Proceeding to create Scheduled Query Analytics Rules in Microsoft Sentinel using ingested Windows, Syslog, and custom telemetry logs for detection engineering and alert generation.
