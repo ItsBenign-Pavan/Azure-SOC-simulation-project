@@ -46,11 +46,7 @@ To continuously evaluate Windows Security Events and identify suspicious authent
 
 ### 📸 Rule Creation
 
-_Add screenshot here_
-
-```md
-![Rule Creation](screenshots/rule-creation.png)
-```
+<img src="screenshots/SCR-1.png" alt="SCR-1" width="90%">
 
 ---
 
@@ -75,11 +71,7 @@ To classify the detection under the MITRE ATT&CK framework and prioritize the al
 
 ### 📸 General Details Configuration
 
-_Add screenshot here_
-
-```md
-![General Details](screenshots/general-details.png)
-```
+<img src="screenshots/SCR-2.png" alt="SCR-2" width="90%">
 
 ---
 
@@ -107,11 +99,8 @@ To detect repeated failed authentication attempts that may indicate brute-force 
 
 ### 📸 Rule Logic Configuration
 
-_Add screenshot here_
-
-```md
-![Rule Logic](screenshots/rule-logic.png)
-```
+<img src="screenshots/SCR-3.png" alt="SCR-3" width="90%">
+<img src="screenshots/SCR-4.png" alt="SCR-4" width="90%">
 
 ---
 
@@ -137,11 +126,7 @@ To enable Microsoft Sentinel to associate alerts with related users, hosts, and 
 
 ### 📸 Entity Mapping
 
-_Add screenshot here_
-
-```md
-![Entity Mapping](screenshots/entity-mapping.png)
-```
+<img src="screenshots/SCR-5.png" alt="SCR-5" width="90%">
 
 ---
 
@@ -165,11 +150,7 @@ To continuously monitor incoming telemetry and evaluate failed login activity in
 
 ### 📸 Query Scheduling
 
-_Add screenshot here_
-
-```md
-![Query Scheduling](screenshots/query-scheduling.png)
-```
+<img src="screenshots/SCR-6.png" alt="SCR-6" width="90%">
 
 ---
 
@@ -187,11 +168,7 @@ Before deployment, the analytics rule configuration was reviewed to validate:
 
 ### 📸 Review Configuration
 
-_Add screenshot here_
-
-```md
-![Review Rule](screenshots/review-rule.png)
-```
+<img src="screenshots/SCR-7.png" alt="SCR-7" width="90%">
 
 ---
 
@@ -210,11 +187,7 @@ After deployment, the Scheduled Query Rule was successfully validated in the **A
 
 ### 📸 Active Rules Validation
 
-_Add screenshot here_
-
-```md
-![Active Rule](screenshots/active-rule.png)
-```
+<img src="screenshots/SCR-8.png" alt="SCR-8" width="90%">
 
 ---
 
@@ -237,11 +210,7 @@ To validate the complete detection pipeline from telemetry ingestion to incident
 
 ### 📸 Incident Created
 
-_Add screenshot here_
-
-```md
-![Incident Created](screenshots/incident-created.png)
-```
+<img src="screenshots/SCR-9.png" alt="SCR-9" width="90%">
 
 ---
 
