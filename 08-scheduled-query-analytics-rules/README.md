@@ -1,4 +1,4 @@
-# 🚨 08 — Scheduled Query Analytics Rules
+# 🚨 Scheduled Query Analytics Rules
 
 ## 📌 Objective
 
