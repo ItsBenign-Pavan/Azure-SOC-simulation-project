@@ -100,7 +100,7 @@ These logs were forwarded to the Log Analytics Workspace connected to Microsoft 
 
 ---
 
-# 📸 DCR Configuration
+## 📸 DCR Configuration
 
 <img src="screenshots/DCR.png" alt="DCR"  width="90%">
 
@@ -128,9 +128,9 @@ This confirmed:
 
 ---
 
-# 📸 Event Table Validation
+## 📸 Event Table Validation
 
-<img src="screenshots/DCR.png" alt="DCR"  width="90%">
+<img src="screenshots/KQL.png" alt="KQL"  width="90%">
 
 ---
 
@@ -168,13 +168,11 @@ A Near Real-Time Analytics Rule was created in Microsoft Sentinel.
 
 ---
 
-# 📸 NRT Rule Creation
+## 📸 NRT Rule Creation
 
-_Add screenshot here_
+<img src="screenshots/Rule-creation-1.png" alt="Rule-creation"  width="90%">
 
-```md
-![NRT Rule Creation](screenshots/nrt-rule-creation.png)
-```
+<img src="screenshots/Rule-creation-2.png" alt="Rule-creation"  width="90%">
 
 ---
 
@@ -205,13 +203,11 @@ Such activity may indicate:
 
 ---
 
-# 📸 Rule Logic Configuration
+## 📸 Rule Logic Configuration
 
-_Add screenshot here_
+<img src="screenshots/Rule-creation-3.png" alt="Rule-creation"  width="90%">
 
-```md
-![Rule Logic](screenshots/rule-logic.png)
-```
+<img src="screenshots/Rule-creation-4.png" alt="Rule-creation"  width="90%">
 
 ---
 
@@ -228,13 +224,9 @@ Entity mapping was configured to enrich incident investigation workflows.
 
 ---
 
-# 📸 Entity Mapping
+## 📸 Entity Mapping
 
-_Add screenshot here_
-
-```md
-![Entity Mapping](screenshots/entity-mapping.png)
-```
+<img src="screenshots/Rule-creation-5.png" alt="Rule-creation"  width="90%">
 
 ---
 
@@ -250,13 +242,9 @@ Before deployment, the following configurations were reviewed:
 
 ---
 
-# 📸 Rule Review
+## 📸 Rule Review
 
-_Add screenshot here_
-
-```md
-![Rule Review](screenshots/rule-review.png)
-```
+<img src="screenshots/Rule-creation-6.png" alt="Rule-creation"  width="90%">
 
 ---
 
@@ -273,13 +261,9 @@ After deployment, the NRT Analytics Rule was validated within the Active Rules s
 
 ---
 
-# 📸 Active Rule Validation
+## 📸 Active Rule Validation
 
-_Add screenshot here_
-
-```md
-![Active Rule Validation](screenshots/active-rule-validation.png)
-```
+<img src="screenshots/Rule-creation-7.png" alt="Rule-creation"  width="90%">
 
 ---
 
@@ -294,13 +278,9 @@ After clearing the Windows System log again, Microsoft Sentinel successfully tri
 
 ---
 
-# 📸 Incident Created
+## 📸 Incident Created
 
-_Add screenshot here_
-
-```md
-![Incident Created](screenshots/incident-created.png)
-```
+<img src="screenshots/Incident.png" alt="Incident"  width="90%">
 
 ---
 
