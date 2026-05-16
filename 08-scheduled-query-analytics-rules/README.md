@@ -242,4 +242,4 @@ To validate the complete detection pipeline from telemetry ingestion to incident
 
 # 🔗 Next Step
 
-Proceeding to investigate generated incidents and perform threat hunting using KQL queries within Microsoft Sentinel.
+Proceeding to implement Near Real-Time (NRT) Analytics Rules for rapid threat detection and low-latency incident generation within Microsoft Sentinel.
