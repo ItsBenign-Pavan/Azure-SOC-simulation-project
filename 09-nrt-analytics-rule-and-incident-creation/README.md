@@ -102,11 +102,9 @@ These logs were forwarded to the Log Analytics Workspace connected to Microsoft 
 
 # 📸 DCR Configuration
 
-_Add screenshot here_
+<img src="screenshots/DCR.png" alt="DCR"  width="90%">
 
-```md
-![DCR Configuration](screenshots/dcr-configuration.png)
-```
+<img src="screenshots/DCR-Visualizer.png" alt="DCR-Visualizer"  width="90%">
 
 ---
 
@@ -132,11 +130,7 @@ This confirmed:
 
 # 📸 Event Table Validation
 
-_Add screenshot here_
-
-```md
-![Event Table Validation](screenshots/event-table-validation.png)
-```
+<img src="screenshots/DCR.png" alt="DCR"  width="90%">
 
 ---
 
