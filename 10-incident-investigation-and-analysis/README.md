@@ -24,7 +24,7 @@ Covers the initial incident investigation workflow performed through the Microso
 
 ## 🔎 Advanced Threat Hunting
 
-📄 [`Advanced-Hunting.md`](./Advanced-Hunting.md)
+📄 [`Advanced-Hunting.md`](./AdvancedHunting.md)
 
 Focuses on advanced KQL-based threat hunting and telemetry correlation, including:
 
@@ -40,7 +40,7 @@ Focuses on advanced KQL-based threat hunting and telemetry correlation, includin
 
 ## 📋 SOC Investigation Conclusion
 
-📄 [`SOC-Investigation-Conclusion.md`](./SOC-Investigation-Conclusion.md)
+📄 [`SOC-Investigation-Conclusion.md`](./Resolution.md)
 
 Documents the final investigation findings and incident closure workflow, including:
 
