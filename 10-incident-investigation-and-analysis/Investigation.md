@@ -45,7 +45,22 @@ This provides analysts with an overall security posture and monitoring visibilit
 
 ## 📸 Sentinel Overview Dashboard
 
-<img src="screenshots/sentinel-overview.png" width="100%">
+<table>
+<tr>
+<td width="65%">
+
+<img src="screenshots/Overview-1.png" width="100%"><br><br>
+<img src="screenshots/Overview-2.png" width="100%">
+
+</td>
+
+<td width="35%">
+
+<img src="screenshots/Overview-3.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -80,7 +95,7 @@ The incident indicated repeated failed authentication attempts occurring within 
 
 ## 📸 Incident Overview
 
-<img src="screenshots/incident-overview.png" width="100%">
+<img src="screenshots/Inc-title.png" width="100%">
 
 ---
 
@@ -100,7 +115,31 @@ This process helps establish accountability and ensures proper tracking of inves
 
 ## 📸 Incident Assignment
 
-<img src="screenshots/incident-assignment.png" width="100%">
+<table>
+<tr>
+<td width="50%">
+
+<img src="screenshots/assigning-inc.png" width="100%">
+
+</td>
+
+<td width="50%">
+
+<img src="screenshots/assigning-alert.png" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+<br>
+
+<img src="screenshots/assigned-inc.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -119,7 +158,21 @@ The investigation graph provides a visual representation of the incident context
 
 ## 📸 Attack Story & Investigation Graph
 
-<img src="screenshots/investigation-graph.png" width="100%">
+<table>
+<tr>
+<td width="50%">
+
+<img src="screenshots/attack-story.png" width="100%">
+
+</td>
+
+<td width="50%">
+
+<img src="screenshots/Inc-graph.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 ---
 
