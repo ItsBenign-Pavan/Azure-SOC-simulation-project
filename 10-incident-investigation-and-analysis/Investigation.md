@@ -160,7 +160,7 @@ The investigation graph provides a visual representation of the incident context
 
 <table>
 <tr>
-<td width="50%">
+<td width="30%">
 
 <img src="screenshots/attack-story.png" width="100%">
 
@@ -193,7 +193,8 @@ The entity mapping provided valuable contextual information for understanding wh
 
 ## 📸 Affected Assets
 
-<img src="screenshots/affected-assets.png" width="100%">
+<img src="screenshots/asset-1.png" width="90%">
+<img src="screenshots/asset-2.png" width="90%">
 
 ---
 
@@ -215,7 +216,7 @@ This step helps analysts validate whether the alert activity appears legitimate,
 
 ## 📸 Evidence Review
 
-<img src="screenshots/evidence-review.png" width="100%">
+<img src="screenshots/evidence.png" width="90%">
 
 ---
 
@@ -242,7 +243,7 @@ Re-running detection queries is a common SOC practice used to validate detection
 
 ## 📸 Re-running Rule Logic Query
 
-<img src="screenshots/rerun-query.png" width="100%">
+<img src="screenshots/KQL.png" width="90%">
 
 ---
 
