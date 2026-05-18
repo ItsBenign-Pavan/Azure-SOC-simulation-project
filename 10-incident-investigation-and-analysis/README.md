@@ -8,7 +8,7 @@ The investigation was performed against a brute-force authentication detection g
 
 ## 📘 Investigation Workflow
 
-📄 [`Investigation.md`](./Investigation.md)
+📄 [`01-Investigation.md`](./01-Investigation.md)
 
 Covers the initial incident investigation workflow performed through the Microsoft Defender portal, including:
 
@@ -24,7 +24,7 @@ Covers the initial incident investigation workflow performed through the Microso
 
 ## 🔎 Advanced Threat Hunting
 
-📄 [`AdvancedHunting.md`](./AdvancedHunting.md)
+📄 [`02-AdvancedHunting.md`](./02-AdvancedHunting.md)
 
 Focuses on advanced KQL-based threat hunting and telemetry correlation, including:
 
@@ -40,7 +40,7 @@ Focuses on advanced KQL-based threat hunting and telemetry correlation, includin
 
 ## 📋 SOC Investigation Conclusion
 
-📄 [`Resolution.md)`](./Resolution.md)
+📄 [`03-Resolution.md)`](./03-Resolution.md)
 
 Documents the final investigation findings and incident closure workflow, including:
 
