@@ -64,7 +64,7 @@ This visualization helps identify:
 
 ## 📸 Failed Login Timeline
 
-<img src="screenshots/w1.1.png" width="100%">
+<img src="screenshots/w1.1.png" width="80%">
 
 ---
 
@@ -103,7 +103,7 @@ This visualization helps analysts:
 
 ## 📸 Top Targeted Accounts
 
-<img src="screenshots/w1.2.png" width="100%">
+<img src="screenshots/w1.2.png" width="80%">
 
 ---
 
@@ -143,7 +143,7 @@ This visualization helps analysts:
 
 ## 📸 Latest Failed Login Events
 
-<img src="screenshots/w1.3.png" width="100%">
+<img src="screenshots/w1.3.png" width="80%">
 
 ---
 
@@ -181,7 +181,7 @@ This visualization helps analysts:
 
 ## 📸 Failed Attempts by Device
 
-<img src="screenshots/w1.4.png" width="100%">
+<img src="screenshots/w1.4.png" width="80%">
 
 ---
 
