@@ -19,7 +19,7 @@ The workbook focuses on incident telemetry collected from the `SecurityIncident`
 
 # 📸 Workbook Overview
 
-<img src="screenshots/workbook-overview.png" width="100%">
+<img src="screenshots/w2.0.png" width="100%">
 
 ---
 
@@ -56,7 +56,7 @@ This visualization helps analysts:
 
 ## 📸 Incident Severity Distribution
 
-<img src="screenshots/incident-severity-distribution.png" width="100%">
+<img src="screenshots/w2.1.png" width="80%">
 
 ---
 
@@ -93,7 +93,7 @@ This visualization helps analysts:
 
 ## 📸 Incident Timeline
 
-<img src="screenshots/incident-timeline.png" width="100%">
+<img src="screenshots/w2.2.png" width="80%">
 
 ---
 
@@ -131,7 +131,7 @@ This visualization helps analysts:
 
 ## 📸 Active Incidents
 
-<img src="screenshots/active-incidents.png" width="100%">
+<img src="screenshots/w2.3.png" width="80%">
 
 ---
 
@@ -168,7 +168,7 @@ This visualization helps SOC teams:
 
 ## 📸 Incident Ownership Monitoring
 
-<img src="screenshots/incident-ownership.png" width="100%">
+<img src="screenshots/w2.4.png" width="80%">
 
 ---
 
@@ -188,7 +188,7 @@ SecurityIncident
 ## 📊 Visualization Type
 
 ```text
-Donut Chart
+Pie Chart
 ```
 
 ---
@@ -205,7 +205,7 @@ This visualization helps analysts:
 
 ## 📸 Incident Status Distribution
 
-<img src="screenshots/incident-status.png" width="100%">
+<img src="screenshots/w2.5.png" width="80%">
 
 ---
 
@@ -244,6 +244,6 @@ This visualization helps analysts:
 
 ## 📸 High Severity Incidents
 
-<img src="screenshots/high-severity-incidents.png" width="100%">
+<img src="screenshots/w2.6.png" width="80%">
 
 ---
