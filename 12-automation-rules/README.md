@@ -21,7 +21,7 @@ These workflows simulate real-world Security Operations Center (SOC) automation 
 |---|---|
 | [01-Auto-Assign-Incidents.md](01-Auto-Assign-Incidents.md) | Automatically assigns brute-force related incidents to SOC analysts during incident creation |
 | [02-High-Severity-Tagging.md](02-High-Severity-Tagging.md) | Automatically enriches and prioritizes high severity incidents using investigation and classification tags |
-| [03-Auto-Close-Informational-Incidents.md](03-Auto-Close-Informational-Incidents.md) | Automatically classifies and closes low severity informational incidents generated from expected RDP activity |
+| [03-Auto-Close-Low-Severity.md](03-Auto-Close-Low-Severity.md) | Automatically classifies and closes low severity informational incidents generated from expected RDP activity |
 
 ---
 
