@@ -57,7 +57,8 @@ The automation rule was configured with the following settings:
 
 # 📸 Automation Rule Configuration
 
-<img src="screenshots/automation-rule-configuration.png" width="100%">
+<img src="screenshots/AR-1.1.png" width="100%">
+<img src="screenshots/AR-1.2.png" width="100%">
 
 ---
 
