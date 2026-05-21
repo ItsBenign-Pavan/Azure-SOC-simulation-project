@@ -57,7 +57,7 @@ The automation rule was configured with the following settings:
 
 # 📸 Automation Rule Configuration
 
-<img src="screenshots/AR-1.1.png" width="100%">
+<img src="screenshots/AR-1.1.png" width="80%">
 <img src="screenshots/AR-1.2.png" width="100%">
 
 ---
@@ -75,7 +75,8 @@ To validate the automation workflow:
 
 # 📸 Automation Result
 
-<img src="screenshots/automation-result.png" width="100%">
+<img src="screenshots/AR-1 result1.png" width="80%">
+<img src="screenshots/AR-1 result2.png" width="90%">
 
 ---
 
