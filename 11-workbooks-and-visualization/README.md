@@ -29,7 +29,7 @@ All workbook visualizations were created using KQL queries and Sentinel workbook
 | [02-Incident-Management-Workbook.md](02-Incident-Management-Workbook.md) | SOC-focused incident monitoring dashboard for tracking severity, incident lifecycle, ownership, and investigation status |
 | [03-Security-Events-Workbook.md](03-Security-Events-Workbook.md) | Windows security telemetry monitoring dashboard covering Event IDs, authentication activity, log clearing events, and security event distribution |
 | [04-Alert-Monitoring-Workbook.md](04-Alert-Monitoring-Workbook.md) | Alert and detection visibility dashboard for monitoring Sentinel alerts, analytics rule activity, affected entities, and incident-linked detections |
-| [05-VM-Activity-Authentication-Workbook.md](05-VM-Activity-Authentication-Workbook.md) | Endpoint-focused dashboard for monitoring VM activity, user authentication behavior, failed logins, and host-level telemetry |
+| [05-VM-Activity-Workbook.md](05-VM-Activity-Workbook.md) | Endpoint-focused dashboard for monitoring VM activity, user authentication behavior, failed logins, and host-level telemetry |
 
 ---
 
