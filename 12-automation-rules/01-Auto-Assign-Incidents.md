@@ -75,7 +75,7 @@ To validate the automation workflow:
 
 # 📸 Automation Result
 
-<img src="screenshots/AR-1 result1.png" width="80%">
+<img src="screenshots/AR-1 result1.png" width="60%">
 <img src="screenshots/AR-1 result2.png" width="90%">
 
 ---
