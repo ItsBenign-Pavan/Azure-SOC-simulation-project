@@ -93,15 +93,21 @@ This allowed the playbook to successfully update Sentinel incidents.
 
 ---
 
+# 📸 Playbook Creation
+
+<img src="screenshots/p2.1.png" width="60%">
+
+---
+
 # 📸 Logic App Configuration
 
-<img src="screenshots/enrichment-playbook-designer.png" width="100%">
+<img src="screenshots/p2.2.png" width="100%">
 
 ---
 
 # 📸 RBAC Permission Configuration
 
-<img src="screenshots/enrichment-rbac.png" width="100%">
+<img src="screenshots/p2 RBAC.png" width="100%">
 
 ---
 
@@ -118,7 +124,7 @@ Automation Workflow:
 
 # 📸 Automation Rule Configuration
 
-<img src="screenshots/enrichment-automation-rule.png" width="100%">
+<img src="screenshots/p2.3.png" width="60%">
 
 ---
 
@@ -136,13 +142,15 @@ The comment contained dynamically generated incident information.
 
 # 📸 Successful Playbook Execution
 
-<img src="screenshots/enrichment-run-history.png" width="100%">
+<img src="screenshots/p2 result1.png" width="100%">
 
 ---
 
 # 📸 Incident Enrichment Result
 
-<img src="screenshots/enrichment-comment-result.png" width="100%">
+<img src="screenshots/p2 result2.png" width="100%">
+
+<img src="screenshots/p2 result3.png" width="60%">
 
 ---
 
