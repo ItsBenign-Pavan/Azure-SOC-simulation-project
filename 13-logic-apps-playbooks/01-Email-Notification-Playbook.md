@@ -79,7 +79,9 @@ The playbook configuration was saved successfully after validating the Logic App
 
 # 📸 Playbook Configuration
 
-<img src="screenshots/playbook-designer.png" width="100%">
+<img src="screenshots/p1.1.png" width="70%">
+
+<img src="screenshots/p1.2.png" width="100%">
 
 ---
 
@@ -96,7 +98,7 @@ Automation Workflow:
 
 # 📸 Automation Rule Configuration
 
-<img src="screenshots/playbook-automation-rule.png" width="100%">
+<img src="screenshots/p1.3.png" width="70%">
 
 ---
 
@@ -118,14 +120,13 @@ The email included:
 
 # 📸 Successful Playbook Execution
 
-<img src="screenshots/playbook-run-history.png" width="100%">
+<img src="screenshots/p1 result1.png" width="100%">
 
 ---
 
 # 📸 Email Notification Result
 
-<img src="screenshots/playbook-email-result.png" width="100%">
-
+<img src="screenshots/p1 result2.png" width="80%">
 ---
 
 # 🧠 Features Demonstrated
