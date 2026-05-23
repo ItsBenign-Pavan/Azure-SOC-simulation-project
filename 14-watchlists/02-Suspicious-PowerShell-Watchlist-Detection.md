@@ -142,9 +142,9 @@ Add-MpPreference,Defender exclusion modification,High
 
 # 📸 Screenshot Section
 
-<img src="screenshots/w2.1.png" widht="70%">
-<img src="screenshots/w2.2.png" widht="70%">
-<img src="screenshots/w2.3.png" widht="70%">
+<img src="screenshots/w2.1.png" width="70%">
+<img src="screenshots/w2.2.png" width="80%">
+<img src="screenshots/w2.3.png" width="60%">
 
 # 🔍 Watchlist Validation
 
@@ -163,8 +163,7 @@ This confirmed:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- successful watchlist validation query
+<img src="screenshots/w2-validation.png" width="90%">
 
 ---
 
@@ -199,10 +198,7 @@ without harming the VM.
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- PowerShell execution terminal
-- suspicious commands executed together
-- attack simulation activity
+<img src="screenshots/w2-commandsExecution.png" width="100%">
 
 ---
 
@@ -225,9 +221,7 @@ This confirmed:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- Sentinel PowerShell log query results
-- suspicious PowerShell event entries
+<img src="screenshots/w2-validatingEvents.png" width="90%">
 
 ---
 
@@ -284,10 +278,7 @@ Event
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- analytics rule configuration
-- KQL detection query
-- analytics rule overview
+<img src="screenshots/w2-AR.png" width="80%">
 
 ---
 
@@ -308,11 +299,8 @@ This demonstrated:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- generated Sentinel incident
-- incident overview
-- incident entities
-- incident investigation graph
+<img src="screenshots/w2-incidentCreated1.png" width="60%">
+<img src="screenshots/w2-incidentCreated2.png" width="80%">
 
 ---
 
