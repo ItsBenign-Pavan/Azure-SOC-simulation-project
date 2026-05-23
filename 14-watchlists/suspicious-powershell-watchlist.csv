@@ -1,0 +1,21 @@
+Pattern,Description,Severity
+ExecutionPolicy Bypass,Suspicious execution policy bypass,High
+EncodedCommand,Encoded PowerShell execution,High
+NoProfile,PowerShell running without profile,Medium
+Invoke-WebRequest,Possible web request activity,Medium
+Invoke-Expression,Suspicious command execution,High
+DownloadString,Potential payload retrieval,High
+IEX,Short form invoke expression usage,High
+Net.WebClient,Web client object usage,Medium
+Hidden,Hidden PowerShell execution,High
+WindowStyle Hidden,Stealth execution behavior,High
+Bypass,Execution policy bypass usage,High
+Unrestricted,Unrestricted execution policy usage,Medium
+Start-Process,Suspicious process spawning,Medium
+FromBase64String,Encoded content decoding,High
+Reflection.Assembly,Potential in-memory execution,High
+WebRequest,Outbound web communication,Medium
+iex(new-object net.webclient),Classic download cradle pattern,High
+Invoke-Mimikatz,Mimikatz invocation pattern,Critical
+Set-MpPreference,Defender modification attempt,High
+Add-MpPreference,Defender exclusion modification,High
