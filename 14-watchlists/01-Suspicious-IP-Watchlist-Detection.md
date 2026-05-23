@@ -122,10 +122,9 @@ IPAddress,Description,ThreatLevel
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- watchlist creation
-- uploaded CSV
-- watchlist overview page
+<img src="screenshots/w1.1.png" width="70%">
+<img src="screenshots/w1.2.png" width="70%">
+<img src="screenshots/w1.3.png" width="70%">
 
 ---
 
@@ -146,8 +145,7 @@ This verified:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- successful watchlist KQL query results
+<img src="screenshots/w1-validation.png" width="70%">
 
 ---
 
@@ -210,11 +208,7 @@ This enables:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- analytics rule configuration
-- detection query
-- entity mapping configuration
-- successful rule creation
+<img src="screenshots/w1-AR.png" width="80%">
 
 ---
 
@@ -235,10 +229,7 @@ This generated SecurityEvent logs containing:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- successful RDP connection from Linux VM
-- attack simulation activity
-- Windows VM authentication events
+<img src="screenshots/w1-RDP attempt.png" width="100%">
 
 ---
 
@@ -247,8 +238,13 @@ Add screenshots for:
 The following KQL query was used to validate IOC correlation telemetry:
 
 ```kusto
+let suspiciousIPs = (
+_GetWatchlist('suspicious_ip_watchlist')
+| project IPAddress
+);
 SecurityEvent
-| where IpAddress == "20.207.203.163"
+| where IpAddress in (suspiciousIPs)
+| project TimeGenerated, Computer, Account, IpAddress, Activity
 | sort by TimeGenerated desc
 ```
 
@@ -261,9 +257,7 @@ This confirmed:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- SecurityEvent query results
-- attacker IP visibility inside logs
+<img src="screenshots/w1-validattingEvents.png" width="70%">
 
 ---
 
@@ -283,11 +277,8 @@ This demonstrated:
 
 # 📸 Screenshot Section
 
-Add screenshots for:
-- generated Sentinel incident
-- incident overview
-- incident entities
-- incident investigation graph
+<img src="screenshots/w1-incidentCreated1.png" width="70%">
+<img src="screenshots/w1-incidentCreated2.png" width="70%">
 
 ---
 
