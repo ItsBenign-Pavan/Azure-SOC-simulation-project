@@ -45,7 +45,7 @@ Demonstrates:
 - KQL-based correlation
 - Sentinel incident generation
 
-📄 [02-Suspicious-PowerShell-Behavior-Detection.md](02-Suspicious-PowerShell-Behavior-Detection.md)
+📄 [02-Suspicious-PowerShell-Watchlist-Detection.md](02-Suspicious-PowerShell-Watchlist-Detection.md)
 
 ---
 
