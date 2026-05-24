@@ -207,8 +207,20 @@ without harming the VM.
 The following KQL query was used to validate successful PowerShell telemetry ingestion:
 
 ```kusto
+let suspiciousPatterns = (
+_GetWatchlist('suspicious_powershell_watchlist')
+| project Pattern
+);
+
 Event
 | where EventLog has "PowerShell"
+| extend SuspiciousMatch = tostring(split(RenderedDescription, " ")[0])
+| where RenderedDescription has_any (suspiciousPatterns)
+| project
+    TimeGenerated,
+    Computer,
+    EventLevelName,
+    RenderedDescription
 | sort by TimeGenerated desc
 ```
 
