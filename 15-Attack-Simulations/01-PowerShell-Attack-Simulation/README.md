@@ -136,22 +136,7 @@ powershell.exe -WindowStyle Hidden
 
 Write-Host "Simulation completed."
 ```
-
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- Linux attacker VM
-- PowerShell payload creation
-- payload content
-
-Suggested filenames:
-
-```text
-01-attacker-payload-creation.png
-02-payload-content.png
-```
+<img src="screenshots/payload.png" width="80%">
 
 ---
 
@@ -176,20 +161,7 @@ This simulated:
 - remote payload delivery
 - lateral movement behavior
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- SCP transfer
-- attacker terminal
-- successful payload delivery
-
-Suggested filename:
-
-```text
-03-payload-transfer.png
-```
+<img src="screenshots/delivery.png" width="90%">
 
 ---
 
@@ -209,20 +181,7 @@ This simulated:
 - suspicious command execution
 - attacker-controlled payload launch
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- remote execution command
-- Linux attacker terminal
-- successful execution output
-
-Suggested filename:
-
-```text
-04-remote-payload-execution.png
-```
+<img src="screenshots/execution.png" width="90%">
 
 ---
 
@@ -241,21 +200,7 @@ Artifact created:
 C:\Temp\SuspiciousFolder
 ```
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- suspicious folder creation
-- payload presence on victim desktop
-- PowerShell execution activity
-
-Suggested filenames:
-
-```text
-05-payload-on-victim.png
-06-suspicious-folder-created.png
-```
+<img src="screenshots/impact.png" width="80%">
 
 ---
 
@@ -278,20 +223,7 @@ Event Viewer
 → Operational
 ```
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- Event Viewer PowerShell logs
-- warning/information events
-- suspicious PowerShell entries
-
-Suggested filename:
-
-```text
-07-powershell-operational-logs.png
-```
+<img src="screenshots/PowerShell-logs.png" width="100%">
 
 ---
 
@@ -310,19 +242,7 @@ This confirmed:
 - PowerShell Operational visibility
 - suspicious execution traces
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- Sentinel query results
-- suspicious PowerShell events
-
-Suggested filename:
-
-```text
-08-sentinel-powershell-query.png
-```
+<img src="screenshots/Sentinel-telemetry.png" width="80%">
 
 ---
 
@@ -362,21 +282,7 @@ The generated incidents demonstrated:
 - IOC correlation
 - automated SOC workflows
 
----
-
-# 📸 Screenshot Section
-
-Add screenshots for:
-- Sentinel incident
-- incident overview
-- entities
-- investigation graph
-
-Suggested filename:
-
-```text
-10-generated-incident.png
-```
+<img src="screenshots/incidentCreated.png" width="80%">
 
 ---
 
@@ -392,32 +298,6 @@ This simulation demonstrated:
 - Sentinel analytics workflows
 - SOC investigation readiness
 - attack chain visibility
-
----
-
-# 🎯 Final Detection Workflow
-
-```text
-Linux Attacker VM
-↓
-Suspicious Payload Creation
-↓
-Payload Delivery via SCP
-↓
-Remote Execution via SSH
-↓
-Windows Victim VM
-↓
-PowerShell Operational Logs
-↓
-Microsoft Sentinel
-↓
-Watchlist Correlation
-↓
-Analytics Rule Trigger
-↓
-Incident Generation
-```
 
 ---
 
