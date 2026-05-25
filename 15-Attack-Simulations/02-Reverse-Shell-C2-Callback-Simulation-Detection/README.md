@@ -1,73 +1,104 @@
-# Reverse Shell / C2 Callback Simulation Detection
+# 🔥 Reverse Shell / C2 Callback Detection Simulation
 
-## Overview
-
-This attack simulation demonstrates a realistic reverse shell / command-and-control (C2) callback scenario using a Linux attacker VM and Windows victim VM inside an Azure environment. The objective was to simulate suspicious outbound communication behavior and detect it using Sysmon, Azure Monitor Agent (AMA), Microsoft Sentinel analytics rules, and watchlist enrichment.
-
-This simulation focuses on network-based adversary behavior rather than simple PowerShell execution telemetry.
+> Simulating realistic command-and-control (C2) callback behavior using Sysmon, Microsoft Sentinel, AMA, and behavioral analytics engineering.
 
 ---
 
-# Lab Architecture
+# 🎯 Objective
 
-| Component | Purpose |
+This project demonstrates a realistic reverse shell / command-and-control (C2) callback simulation using:
+
+- Linux Attacker VM
+- Windows Victim VM
+- Sysmon Endpoint Telemetry
+- Azure Monitor Agent (AMA)
+- Microsoft Sentinel
+- Behavioral + IOC-Based Detection Logic
+
+The objective was to simulate suspicious outbound callback behavior and detect it using advanced telemetry engineering and Microsoft Sentinel analytics rules.
+
+---
+
+# 🏗️ Lab Architecture
+
+```text
+Linux Attacker VM
+        ↓
+Fake C2 Listener (Netcat)
+        ↓
+Windows Victim Callback
+        ↓
+Sysmon Event ID 3
+        ↓
+AMA Ingestion
+        ↓
+Microsoft Sentinel
+        ↓
+Analytics Rule Detection
+        ↓
+Incident Creation
+```
+
+---
+
+# 🛠️ Technologies Used
+
+| Technology | Purpose |
 |---|---|
-| Linux VM | Simulated attacker / C2 listener |
-| Windows Server VM | Victim machine |
-| Sysmon | Advanced endpoint telemetry |
-| AMA | Log ingestion into Sentinel |
-| Microsoft Sentinel | Detection & incident generation |
-| Watchlist | Suspicious infrastructure enrichment |
+| Microsoft Sentinel | SIEM & Incident Detection |
+| Sysmon | Advanced Endpoint Telemetry |
+| AMA | Log Ingestion |
+| Netcat | Simulated C2 Listener |
+| KQL | Detection Engineering |
+| Watchlists | IOC Enrichment |
+| PowerShell | Victim Callback Execution |
 
 ---
 
-# Attack Scenario
+# ⚔️ Attack Simulation Overview
 
-The Linux attacker VM was configured to behave like a command-and-control (C2) server by starting a TCP listener using Netcat.
+This simulation focused on:
+- Suspicious outbound network callbacks
+- Behavioral detection engineering
+- Reverse-shell-like activity
+- Network telemetry analysis
+- Automated incident generation
 
-The Windows victim machine initiated an outbound TCP callback connection to the attacker infrastructure using PowerShell TCP client functionality.
-
-This generated:
-- Sysmon Event ID 3 (Network Connection)
-- Suspicious outbound communication telemetry
-- PowerShell network activity
-- Sentinel incident generation
-
----
-
-# MITRE ATT&CK Mapping
-
-| Technique | ID |
-|---|---|
-| PowerShell | T1059.001 |
-| Command and Scripting Interpreter | T1059 |
-| Application Layer Protocol | T1071 |
-| Ingress Tool Transfer | T1105 |
+Unlike simple PowerShell abuse simulations, this project introduced:
+- Network telemetry
+- IOC enrichment
+- Behavioral correlation
+- C2-style communication
 
 ---
 
-# Step 1 — Sysmon Deployment
+# 🔍 Step 1 — Sysmon Deployment
 
-Sysmon was installed on the Windows victim VM to provide enhanced endpoint telemetry.
+Sysmon was installed on the Windows victim VM to enable advanced telemetry collection.
 
-## Telemetry Enabled
+## Enabled Telemetry
+
 - Process Creation
 - Network Connections
-- Parent-Child Relationships
+- Parent-Child Process Chains
 - Process Hashes
-- PowerShell Activity
+- PowerShell Visibility
 
 ## Sysmon Configuration Used
-SwiftOnSecurity Sysmon Configuration:
+
+SwiftOnSecurity Sysmon Config:
+
+```text
 https://github.com/SwiftOnSecurity/sysmon-config
+```
 
 ---
 
-# Step 2 — AMA & Sentinel Integration
+# ☁️ Step 2 — AMA + Sentinel Integration
 
 Azure Monitor Agent (AMA) was configured to ingest Sysmon Operational logs into Microsoft Sentinel.
 
-## DCR XPath Query
+## XPath Query Used
 
 ```xpath
 Microsoft-Windows-Sysmon/Operational!*
@@ -75,9 +106,9 @@ Microsoft-Windows-Sysmon/Operational!*
 
 ---
 
-# Step 3 — Threat Intelligence Watchlist
+# 🧠 Step 3 — Threat Intelligence Watchlist
 
-A watchlist was created to simulate suspicious attacker infrastructure.
+A custom watchlist was created to simulate suspicious attacker infrastructure.
 
 ## Watchlist Name
 
@@ -98,11 +129,11 @@ IPAddress,Description
 
 ---
 
-# Step 4 — Attacker Listener Setup
+# 🐧 Step 4 — Attacker Listener Setup
 
-A fake C2 listener was started on the Linux attacker VM using Netcat.
+The Linux VM was configured to behave like attacker-controlled C2 infrastructure using Netcat.
 
-## Command
+## Command Used
 
 ```bash
 nc -lvnp 4444
@@ -112,22 +143,24 @@ nc -lvnp 4444
 
 This simulated:
 - Reverse shell listener
-- Command-and-control infrastructure
-- Attacker callback server
+- Attacker-controlled infrastructure
+- C2 callback server
 
 ---
 
-# Step 5 — Victim Callback Execution
+# 🪟 Step 5 — Victim Callback Execution
 
-The Windows victim VM initiated an outbound TCP callback to the attacker infrastructure.
+The Windows victim VM initiated an outbound TCP callback connection to the Linux attacker VM.
 
-## PowerShell Callback Command
+## PowerShell Callback
 
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient("10.0.0.5",4444)
 ```
 
-## Result
+---
+
+# 📡 Result
 
 The Linux attacker VM successfully received the callback connection.
 
@@ -135,10 +168,11 @@ This generated:
 - Sysmon Event ID 3
 - Suspicious outbound PowerShell network activity
 - Sentinel telemetry
+- Incident creation
 
 ---
 
-# Step 6 — Sysmon Telemetry Validation
+# 🔎 Step 6 — Sysmon Telemetry Validation
 
 ## Validation Query
 
@@ -155,13 +189,15 @@ Event
 
 ## Observed Indicators
 
-- Destination IP: `10.0.0.5`
-- Destination Port: `4444`
-- Process: `powershell.exe`
+| Indicator | Value |
+|---|---|
+| Destination IP | `10.0.0.5` |
+| Destination Port | `4444` |
+| Process | `powershell.exe` |
 
 ---
 
-# Step 7 — Sentinel Detection Rule
+# 🚨 Step 7 — Sentinel Detection Rule
 
 ## Rule Name
 
@@ -171,7 +207,7 @@ Potential Reverse Shell / C2 Callback Detection
 
 ## Detection Logic
 
-This analytics rule detects:
+The analytics rule detects:
 - Suspicious scripting engines
 - Outbound network communication
 - Uncommon destination ports
@@ -212,67 +248,92 @@ Event
 
 ---
 
-# Step 8 — Incident Generation
+# 🧬 MITRE ATT&CK Mapping
+
+| Technique | ID |
+|---|---|
+| PowerShell | T1059.001 |
+| Command and Scripting Interpreter | T1059 |
+| Application Layer Protocol | T1071 |
+| Ingress Tool Transfer | T1105 |
+
+---
+
+# 🚨 Step 8 — Incident Generation
 
 Microsoft Sentinel successfully generated an incident after detecting suspicious outbound callback behavior.
 
 ## Detection Highlights
 
-- Outbound callback detected
-- Suspicious PowerShell network activity
-- Connection to known suspicious infrastructure
-- Behavioral + IOC-based detection logic
+- Suspicious outbound callback detected
+- PowerShell network communication observed
+- Connection to suspicious infrastructure identified
+- Behavioral + IOC-based detection logic triggered
 
 ---
 
-# Detection Engineering Concepts Demonstrated
+# 📸 Screenshots
+
+## Linux Attacker VM
+- [ ] Netcat listener active
+- [ ] Successful callback received
+
+## Windows Victim VM
+- [ ] PowerShell callback execution
+
+## Sentinel Logs
+- [ ] Sysmon Event ID 3 telemetry
+- [ ] Parsed destination IP & port
+
+## Sentinel Incident
+- [ ] Generated incident
+- [ ] Alert details
+- [ ] Entities
+
+## Analytics Rule
+- [ ] Detection query
+- [ ] MITRE ATT&CK mapping
+
+---
+
+# 🧠 Detection Engineering Concepts Demonstrated
 
 - Sysmon telemetry engineering
 - AMA log ingestion
-- KQL parsing & field extraction
-- Behavioral detection logic
+- KQL field extraction & parsing
+- Behavioral analytics engineering
 - IOC enrichment using watchlists
 - Reverse shell style network detection
-- Sentinel incident generation
+- Automated incident generation
 - MITRE ATT&CK mapping
 
 ---
 
-# Screenshots
+# 🎯 Outcome
 
-## Suggested Screenshots
+This project successfully demonstrated a realistic reverse shell / command-and-control callback workflow using safe adversary emulation techniques.
 
-### Linux Attacker VM
-- Netcat listener active
-- Successful callback received
-
-### Windows Victim VM
-- PowerShell callback execution
-
-### Sentinel Logs
-- Sysmon Event ID 3 telemetry
-- Parsed destination IP and port
-
-### Sentinel Analytics Rule
-- Detection query
-- MITRE ATT&CK mapping
-
-### Sentinel Incident
-- Generated incident
-- Alert details
-- Entities
-
----
-
-# Outcome
-
-This simulation successfully demonstrated a realistic reverse shell / command-and-control callback workflow using safe adversary emulation techniques.
-
-The project validated:
+The simulation validated:
 - Advanced endpoint telemetry collection
 - Network-based attack detection
 - Behavioral analytics engineering
 - Threat intelligence enrichment
 - Automated incident generation in Microsoft Sentinel
 
-This simulation significantly enhanced the SOC lab by introducing enterprise-style detection engineering and network telemetry analysis capabilities.
+---
+
+# 🚀 Key Takeaway
+
+This simulation significantly upgraded the SOC lab from:
+
+```text
+basic log analysis
+```
+
+to:
+
+```text
+realistic detection engineering & adversary emulation
+```
+
+using enterprise-style telemetry and network-based threat detection workflows.
