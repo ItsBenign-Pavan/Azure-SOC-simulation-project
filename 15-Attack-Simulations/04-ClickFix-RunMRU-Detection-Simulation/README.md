@@ -200,9 +200,7 @@ Execute Command
 ```
 ## Attack Demonstration
 
-![ClickFix Demo](images/clickfix-demo.gif)
-
-Full recording: [clickfix-user-execution.mp4](videos/clickfix-user-execution.mp4)
+![ClickFix Demo](screenshots/ClickFix-demo.gif)
 
 ---
 
