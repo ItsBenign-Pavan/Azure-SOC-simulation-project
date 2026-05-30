@@ -427,17 +427,7 @@ The simulation demonstrated how:
 
 # 🚀 Key Takeaway
 
-This project significantly enhanced the SOC lab from:
-
-```text
-basic PowerShell simulations
-```
-
-to:
-
-```text
-realistic adversary emulation and detection engineering
-```
+This project significantly enhanced the SOC lab from basic PowerShell simulations to realistic adversary emulation and detection engineering
 
 using:
 - staged malware delivery
