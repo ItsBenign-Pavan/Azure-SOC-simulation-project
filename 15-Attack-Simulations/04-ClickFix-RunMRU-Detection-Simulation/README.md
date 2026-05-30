@@ -116,7 +116,7 @@ Purpose:
 
 ### Screenshot
 
-![Teams Voicemail Page](images/01-teams-voicemail-page.png)
+<img src="screenshots/index page.png" width="100%">
 
 ---
 
@@ -143,7 +143,10 @@ Features:
 
 ### Screenshot
 
-![Cloudflare Verification Page](images/02-cloudflare-verification-page.png)
+<img src="screenshots/captcha page.png" width="100%">
+<img src="screenshots/verification page.png" width="100%">
+<img src="screenshots/clickfix page.png" width="100%">
+<img src="screenshots/Run box.png" width="100%">
 
 ---
 
@@ -162,6 +165,11 @@ http://<ATTACKER-IP>:8080
 ```
 
 Victim machine accessed the phishing infrastructure directly from the Linux VM.
+
+### Screenshot
+
+<img src="screenshots/serving html pages.png" width="100%">
+<img src="screenshots/server reponse.png" width="80%">
 
 ---
 
@@ -190,6 +198,11 @@ Open Win + R
             ↓
 Execute Command
 ```
+## Attack Demonstration
+
+![ClickFix Demo](images/clickfix-demo.gif)
+
+Full recording: [clickfix-user-execution.mp4](videos/clickfix-user-execution.mp4)
 
 ---
 
@@ -258,7 +271,7 @@ Event
 
 ### Screenshot
 
-![RunMRU Sysmon Event](images/03-runmru-sysmon-event.png)
+<img src="screenshots/log validation.png" width="100%">
 
 ---
 
@@ -309,15 +322,9 @@ Event
 | T1204 | User Execution |
 | T1059 | Command and Scripting Interpreter |
 
----
-
-# 🚨 Alert Generation
-
-The analytics rule successfully detected the RunMRU artifact generated during the ClickFix simulation.
-
 ### Screenshot
 
-![Analytics Rule](images/04-analytics-rule.png)
+<img src="screenshots/AR.png" width="100%">
 
 ---
 
@@ -333,7 +340,7 @@ Potential ClickFix Activity Detected
 
 ### Screenshot
 
-![Sentinel Incident](images/05-sentinel-incident-created.png)
+<img src="screenshots/incident created.png" width="100%">
 
 ---
 
