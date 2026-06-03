@@ -106,10 +106,6 @@ sudo apt update && sudo apt upgrade -y
 
 The system downloads and installs available package updates successfully.
 
-### 📸 Screenshot
-
-![System Update](images/02-system-update.png)
-
 ---
 
 # ⚙️ Install Suricata
@@ -480,10 +476,6 @@ Example:
   "event_type":"alert"
 }
 ```
-
-### 📸 Screenshot
-
-![Eve JSON Events](images/13-eve-json-events.png)
 
 ---
 
