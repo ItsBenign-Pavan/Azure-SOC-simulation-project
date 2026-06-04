@@ -86,7 +86,7 @@ Ubuntu version information is displayed.
 
 ### 📸 Screenshot
 
-![Ubuntu Version](images/01-ubuntu-version.png)
+<img src="screenshots/OS details.png" width="100%">
 
 ---
 
@@ -130,7 +130,7 @@ Suricata installation completes successfully.
 
 ### 📸 Screenshot
 
-![Suricata Installation](images/03-suricata-installation.png)
+<img src="screenshots/suricata installation.png" width="100%">
 
 ---
 
@@ -158,7 +158,7 @@ This is Suricata version 7.x
 
 ### 📸 Screenshot
 
-![Build Info](images/04-build-info.png)
+<img src="screenshots/build info.png" width="100%">
 
 ---
 
@@ -184,7 +184,7 @@ Active: active (running)
 
 ### 📸 Screenshot
 
-![Service Status](images/05-service-status.png)
+<img src="screenshots/suricata validation.png" width="100%">
 
 ---
 
@@ -214,7 +214,7 @@ eth0
 
 ### 📸 Screenshot
 
-![Interface Identification](images/06-interface-identification.png)
+<img src="screenshots/interface.png" width="100%">
 
 ---
 
@@ -249,7 +249,7 @@ af-packet:
 
 ### 📸 Screenshot
 
-![Interface Configuration](images/07-interface-configuration.png)
+<img src="screenshots/interface config.png" width="100%">
 
 ---
 
@@ -285,7 +285,7 @@ Emerging Threats Open rules are downloaded successfully.
 
 ### 📸 Screenshot
 
-![Rule Update](images/08-rule-update.png)
+<img src="screenshots/rule update.png" width="100%">
 
 ---
 
@@ -321,7 +321,7 @@ Configuration provided was successfully loaded
 
 ### 📸 Screenshot
 
-![Configuration Validation](images/09-configuration-validation.png)
+<img src="screenshots/yaml config.png" width="100%">
 
 ---
 
@@ -357,7 +357,7 @@ suricata.log
 
 ### 📸 Screenshot
 
-![Log Files](images/10-log-files.png)
+<img src="screenshots/log files.png" width="100%">
 
 ---
 
@@ -395,7 +395,7 @@ The website responds successfully and generates traffic that matches an IDS sign
 
 ### 📸 Screenshot
 
-![Test Traffic Generation](images/11-test-traffic.png)
+<img src="screenshots/test traffic.png" width="100%">
 
 ---
 
@@ -431,7 +431,7 @@ ET INFO TestmyIDS Alert
 
 ### 📸 Screenshot
 
-![Fast Log Alert](images/12-fast-log-alert.png)
+<img src="screenshots/alerts.png" width="100%">
 
 ---
 
@@ -510,7 +510,7 @@ The alert record contains information such as:
 
 ### 📸 Screenshot
 
-![Alert Metadata](images/14-alert-metadata.png)
+<img src="screenshots/alert record.png" width="100%">
 
 ---
 
@@ -651,7 +651,7 @@ This deployment provides a foundation for future projects involving:
 
 ---
 
-## Next Project
+## Next Step
 
 ➡️ **02-Suricata-Rule-Management**
 
