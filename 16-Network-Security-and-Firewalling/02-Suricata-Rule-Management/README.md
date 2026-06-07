@@ -98,7 +98,7 @@ The corresponding rule was identified within the Suricata rule set.
 
 ### 📸 Screenshot
 
-![RDP Rule Investigation](images/01-rule-investigation-rdp.png)
+![RDP Rule Investigation](screenshots/01-rule-investigation-rdp.png)
 
 ---
 
@@ -124,7 +124,7 @@ The detection rule responsible for the alert was successfully identified.
 
 ### 📸 Screenshot
 
-![ZIP Rule Investigation](images/02-rule-investigation-zip-exfil.png)
+![ZIP Rule Investigation](screenshots/02-rule-investigation-zip-exfil.png)
 
 ---
 
@@ -228,7 +228,7 @@ alert icmp any any -> any any (msg:"CUSTOM RULE - ICMP Ping Detected"; sid:10000
 
 ### 📸 Screenshot
 
-![Custom Rule Creation](images/03-custom-rule-created.png)
+![Custom Rule Creation](screenshots/03-custom-rule-created.png)
 
 ---
 
@@ -285,7 +285,7 @@ Successful validation confirms:
 
 ### 📸 Screenshot
 
-![Custom Rule Validation](images/04-custom-rule-validation.png)
+![Custom Rule Validation](screenshots/04-custom-rule-validation.png)
 
 ---
 
@@ -313,7 +313,7 @@ Active: active (running)
 
 ### 📸 Screenshot
 
-![Suricata Restarted](images/05-suricata-restarted.png)
+![Suricata Restarted](screenshots/05-suricata-restarted.png)
 
 ---
 
@@ -331,7 +331,7 @@ This confirmed that the custom rule remained successfully loaded.
 
 ### 📸 Screenshot
 
-![ICMP Rule Validation](images/06-icmp-custom-rule-validation.png)
+![ICMP Rule Validation](screenshots/06-icmp-custom-rule-validation.png)
 
 ---
 ---
@@ -409,7 +409,7 @@ was functioning correctly.
 
 ### 📸 Screenshot
 
-![Custom Alert Triggered](images/07-custom-alert-triggered.png)
+![Custom Alert Triggered](screenshots/07-custom-alert-triggered.png)
 
 ---
 
