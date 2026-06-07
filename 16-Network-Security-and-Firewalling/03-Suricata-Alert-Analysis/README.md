@@ -81,7 +81,7 @@ It is designed for rapid human review and alert triage.
 
 ### 📸 Screenshot
 
-![Fast Log Overview](images/01-fast-log-overview.png)
+![Fast Log Overview](screenshots/01-fast-log-overview.png)
 
 ---
 
@@ -118,7 +118,7 @@ This format is commonly ingested into SIEM platforms such as:
 
 ### 📸 Screenshot
 
-![EVE JSON Overview](images/02-eve-json-overview.png)
+![EVE JSON Overview](screenshots/02-eve-json-overview.png)
 
 ---
 
@@ -163,7 +163,7 @@ grep "CUSTOM RULE" /var/log/suricata/fast.log
 
 ### 📸 Screenshot
 
-![Custom ICMP Alert](images/03-custom-icmp-alert.png)
+![Custom ICMP Alert](screenshots/03-custom-icmp-alert.png)
 
 ---
 # 🔎 Custom ICMP Alert Investigation
@@ -306,7 +306,7 @@ was functioning correctly.
 
 ### 📸 Screenshot
 
-![Custom Alert Analysis](images/04-custom-alert-analysis.png)
+![Custom Alert Analysis](screenshots/04-custom-alert-analysis.png)
 
 ---
 
@@ -406,7 +406,7 @@ The event represents expected operating system behavior and was intentionally ge
 
 ### 📸 Screenshot
 
-![EVE JSON Alert Analysis](images/05-eve-json-alert-analysis.png)
+![EVE JSON Alert Analysis](screenshots/05-eve-json-alert-analysis.png)
 
 ---
 # 🖥️ RDP Alert Analysis
@@ -429,7 +429,7 @@ ET INFO RDP - Response To External Host
 
 ### 📸 Screenshot
 
-![RDP Alert Fast Log](images/06-rdp-alert-fastlog.png)
+![RDP Alert Fast Log](screenshots/06-rdp-alert-fastlog.png)
 
 ---
 
@@ -541,7 +541,7 @@ grep '"signature_id":2001330' /var/log/suricata/eve.json | tail -1
 
 ### 📸 Screenshot
 
-![RDP Alert EVE JSON](images/07-rdp-alert-evejson.png)
+![RDP Alert EVE JSON](screenshots/07-rdp-alert-evejson.png)
 
 ---
 
@@ -665,7 +665,7 @@ grep "2035478" /var/log/suricata/fast.log | tail -1
 
 ### 📸 Screenshot
 
-![ZIP Alert Fast Log](images/08-zip-alert-fastlog.png)
+![ZIP Alert Fast Log](screenshots/08-zip-alert-fastlog.png)
 
 ---
 
@@ -761,7 +761,7 @@ grep '"signature_id":2035478' /var/log/suricata/eve.json | tail -1
 
 ### 📸 Screenshot
 
-![ZIP Alert EVE JSON](images/09-zip-alert-evejson.png)
+![ZIP Alert EVE JSON](screenshots/09-zip-alert-evejson.png)
 
 ---
 
@@ -905,7 +905,7 @@ Best suited for:
 
 ### 📸 Screenshot
 
-![Suricata Log Files](images/10-suricata-log-files.png)
+![Suricata Log Files](screenshots/10-suricata-log-files.png)
 
 ---
 
