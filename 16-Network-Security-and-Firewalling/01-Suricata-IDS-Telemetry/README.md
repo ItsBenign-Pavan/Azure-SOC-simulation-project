@@ -80,4 +80,4 @@ The lab environment was built on Ubuntu Linux, where Suricata was deployed, conf
 
 ## Next Module
 
-➡️ Continue to **[02-Linux-Network-Telemetry](../02-Linux-Network-Telemetry)** to explore Linux firewall logging, Syslog collection, and network telemetry analysis in Microsoft Sentinel.
+➡️ Continue to **02-Linux-Network-Telemetry** to explore Linux firewall logging, Syslog collection, and network telemetry analysis in Microsoft Sentinel.
