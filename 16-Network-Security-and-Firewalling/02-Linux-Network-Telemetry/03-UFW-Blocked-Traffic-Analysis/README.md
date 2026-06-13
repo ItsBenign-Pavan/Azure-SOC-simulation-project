@@ -144,19 +144,19 @@ events into Microsoft Sentinel.
 
 ### UFW Block Event Generated
 
-<img src="04-ufw-blocked-traffic.png" width="100%">
+<img src="screenshots/04-ufw-blocked-traffic.png" width="100%">
 
 ---
 
 ### Firewall Block Event Ingested into Sentinel
 
-<img src="05-sentinel-ufw-block-events.png" width="100%">
+<img src="screenshots/05-sentinel-ufw-block-events.png" width="100%">
 
 ---
 
 ### KQL Threat Hunting
 
-<img src="06-kql-ufw-hunting-query.png" width="100%">
+<img src="screenshots/06-kql-ufw-hunting-query.png" width="100%">
 
 ---
 
