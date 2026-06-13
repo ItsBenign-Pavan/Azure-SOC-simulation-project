@@ -91,13 +91,13 @@ Successfully verified:
 
 ### Windows Firewall Log Validation
 
-<img src="02-windows-firewall-log-validation.png" width="100%">
+<img src="screenshots/02-windows-firewall-log-validation.png" width="100%">
 
 ---
 
 ### Windows Firewall Events in Sentinel
 
-<img src="05-sentinel-firewall-events.png" width="100%">
+<img src="screenshots/05-sentinel-firewall-events.png" width="100%">
 
 ---
 
