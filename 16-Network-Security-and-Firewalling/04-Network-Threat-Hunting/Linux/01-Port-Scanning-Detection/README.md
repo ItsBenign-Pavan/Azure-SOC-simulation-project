@@ -46,7 +46,7 @@ KQL Threat Hunting
 
 ### Attack Generation
 
-<img src="screenshots/01-attack-generation.png" width="100%">
+<img src="/screenshots/01-attack-generation.png" width="100%">
 
 The screenshot shows:
 
@@ -58,7 +58,7 @@ The screenshot shows:
 
 ### Local Log Validation
 
-<img src="screenshots/02-local-log-validation.png" width="100%">
+<img src="/screenshots/02-local-log-validation.png" width="100%">
 
 The Linux firewall generated UFW telemetry indicating inspection of inbound traffic targeting the monitored service.
 
@@ -75,7 +75,7 @@ PROTO=TCP
 
 ### Sentinel Event Validation
 
-<img src="screenshots/03-sentinel-events.png" width="100%">
+<img src="/screenshots/03-sentinel-events.png" width="100%">
 
 The firewall telemetry was successfully ingested into Microsoft Sentinel through Syslog collection.
 
@@ -90,7 +90,7 @@ Collected fields included:
 
 ### Threat Hunting Results
 
-<img src="screenshots/04-hunting-query-results.png" width="100%">
+<img src="/screenshots/04-hunting-query-results.png" width="100%">
 
 KQL was used to identify source IPs, destination ports, protocols, and connection attempt frequency.
 
