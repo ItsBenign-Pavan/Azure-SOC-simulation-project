@@ -188,6 +188,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
+<img src="screenshots/Q1.png" width="100%">
 
 ---
 
@@ -203,6 +204,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
+<img src="screenshots/Q2.png" width="100%">
 
 ---
 
@@ -214,6 +216,7 @@ Syslog
 | summarize EventCount=count() by bin(TimeGenerated, 15m)
 | render timechart
 ```
+<img src="screenshots/Q3.png" width="100%">
 
 ---
 
@@ -228,6 +231,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
+<img src="screenshots/Q4.png" width="100%">
 
 ---
 
@@ -243,21 +247,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
-
----
-
-## Hunting Query – Staging Activity Investigation
-
-```kusto
-Syslog
-| where SyslogMessage contains "/tmp/staging"
-| project
-    TimeGenerated,
-    Computer,
-    ProcessName,
-    SyslogMessage
-| order by TimeGenerated desc
-```
+<img src="screenshots/Q5.png" width="100%">
 
 ---
 
@@ -273,6 +263,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
+<img src="screenshots/Q6.png" width="100%">
 
 ---
 
