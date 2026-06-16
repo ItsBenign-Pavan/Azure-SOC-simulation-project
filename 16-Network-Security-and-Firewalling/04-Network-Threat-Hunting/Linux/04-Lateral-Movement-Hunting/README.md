@@ -247,7 +247,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
-<img src="screenshots/Q5.png" width="100%">
+<img src="screenshots/Q6.png" width="100%">
 
 ---
 
@@ -263,7 +263,7 @@ Syslog
     SyslogMessage
 | order by TimeGenerated desc
 ```
-<img src="screenshots/Q6.png" width="100%">
+<img src="screenshots/Q7.png" width="100%">
 
 ---
 
