@@ -131,6 +131,7 @@ SecurityEvent
     Activity
 | order by TimeGenerated desc
 ```
+<img src="screenshots/Q1.png" width="100%">
 
 ---
 
@@ -142,21 +143,7 @@ SecurityEvent
 | summarize EventCount=count() by bin(TimeGenerated, 15m)
 | render timechart
 ```
-
----
-
-## Hunting Query – Network Activity Investigation
-
-```kusto
-SecurityEvent
-| where EventID == 5156
-| project
-    TimeGenerated,
-    Computer,
-    EventID,
-    Activity
-| order by TimeGenerated desc
-```
+<img src="screenshots/Q1.png" width="100%">
 
 ---
 
