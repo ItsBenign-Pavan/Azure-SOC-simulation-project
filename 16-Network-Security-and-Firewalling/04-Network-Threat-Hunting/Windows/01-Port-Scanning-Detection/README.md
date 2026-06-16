@@ -143,7 +143,7 @@ SecurityEvent
 | summarize EventCount=count() by bin(TimeGenerated, 15m)
 | render timechart
 ```
-<img src="screenshots/Q1.png" width="100%">
+<img src="screenshots/Q2.png" width="100%">
 
 ---
 
