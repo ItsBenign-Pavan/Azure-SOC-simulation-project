@@ -59,7 +59,7 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
 - Reviewed other available connectors in Sentinel
 - Identified potential future integrations (e.g., Azure Activity, Office 365)
 
-<img src="screenshots/Other-data-connector.png" width="90%"/>
+<img src="screenshots/Other-data-connectors.png" width="90%"/>
 
 ---
 
