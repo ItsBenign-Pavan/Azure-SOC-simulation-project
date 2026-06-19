@@ -28,7 +28,7 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
 - Connected Microsoft Defender XDR to Microsoft Sentinel
 - Enabled ingestion of security alerts and incidents
 
-<img src="screenshots/Other-data-connectors.png" width="90%"/>
+<img src="screenshots/XDR-data-connector.png" width="90%"/>
 
 #### 🔍 Importance
 - Provides endpoint-level visibility
@@ -44,9 +44,8 @@ To integrate multiple data sources with Microsoft Sentinel in order to enable ce
   - Malicious IP addresses
   - Suspicious domains
   - Known threat indicators
- 
-![Entra ID Connector](screenshots/ThreatIntel-data-connector.png)
-<img src="screenshots/Other-data-connector.png" width="90%"/>
+
+<img src="screenshots/ThreatIntel-data-connector.png" width="90%"/>
 
 #### 🔍 Importance
 - Enhances detection by correlating logs with known threats
