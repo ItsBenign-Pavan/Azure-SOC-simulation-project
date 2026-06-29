@@ -574,32 +574,6 @@ Unlike Azure RBAC fundamentals, the next module will include hands-on role assig
 - Microsoft Learn – Microsoft Sentinel Roles
 
 ---
-
-## Validation Evidence
-
-### 1. Subscription-Level Owner Assignment
-
-![Subscription Owner](screenshots/01-subscription-owner-role.png)
-
-The current user is assigned the **Owner** role at the **Subscription** scope. This demonstrates that Azure RBAC permissions can be assigned at the Subscription level and are inherited by child resources.
-
----
-
-### 2. Resource Group Inherited Permissions
-
-![Inherited Permissions](screenshots/02-resource-group-inherited-role.png)
-
-The Resource Group inherits the **Owner** role from the parent Subscription, demonstrating Azure RBAC's permission inheritance model.
-
----
-
-### 3. Azure Security Principals
-
-![Role Assignments](screenshots/03-role-assignments.png)
-
-The Role Assignments blade shows multiple Azure security principal types, including a **User**, **Service Principal**, and the **Enrich-Sentinel-Incident** Managed Identity.
-
----
 ## Module Summary
 
 In this lab, we explored the foundational concepts of Azure RBAC, including authentication vs. authorization, Azure Resource Hierarchy, RBAC scopes, permission inheritance, Azure Resource Manager (ARM), Access Control (IAM), and the most commonly used built-in Azure roles. We also examined the current SOC Lab environment, verified inherited Owner permissions at the Subscription scope, and observed multiple Azure security principal types including Users, Service Principals, and Managed Identities.
