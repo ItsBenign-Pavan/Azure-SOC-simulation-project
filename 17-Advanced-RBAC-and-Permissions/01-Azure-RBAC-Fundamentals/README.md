@@ -575,6 +575,31 @@ Unlike Azure RBAC fundamentals, the next module will include hands-on role assig
 
 ---
 
+# Validation Evidence
+
+### Screenshot 1 – Subscription-Level Owner Assignment
+
+![Subscription Owner](images/01-subscription-owner-role.png)
+
+The current user is assigned the **Owner** role at the **Subscription** scope. This confirms that Azure RBAC permissions can be assigned at the Subscription level.
+
+---
+
+### Screenshot 2 – Resource Group Inherited Permissions
+
+![Resource Group IAM](images/02-resource-group-inherited-role.png)
+
+The Resource Group inherits the Owner role from the parent Subscription, demonstrating Azure RBAC's permission inheritance model.
+
+---
+
+### Screenshot 3 – Azure Security Principals
+
+![Role Assignments](images/03-role-assignments.png)
+
+The lab environment contains multiple security principal types, including a User, a Service Principal, and the **Enrich-Sentinel-Incident** Managed Identity, demonstrating that Azure RBAC supports both human and non-human identities.
+
+---
 ## Module Summary
 
 In this lab, we explored the foundational concepts of Azure RBAC, including authentication vs. authorization, Azure Resource Hierarchy, RBAC scopes, permission inheritance, Azure Resource Manager (ARM), Access Control (IAM), and the most commonly used built-in Azure roles. We also examined the current SOC Lab environment, verified inherited Owner permissions at the Subscription scope, and observed multiple Azure security principal types including Users, Service Principals, and Managed Identities.
