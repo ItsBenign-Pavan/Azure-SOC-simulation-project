@@ -210,6 +210,8 @@ Virtual Machine
 
 If a role is assigned at the **Subscription** scope, it automatically applies to all Resource Groups and resources within that subscription.
 
+<img src="screenshots/04-role-assignments.png" width="auto">
+
 ---
 
 # Permission Inheritance
@@ -324,6 +326,8 @@ The most commonly used sections are:
 
 Rather than each Azure service having its own permission model, Azure RBAC provides a centralized authorization system through the IAM blade.
 
+<img src="screenshots/03-resource-group-iam-overview.png" width="auto">
+
 ---
 
 # Built-in Azure Roles
@@ -339,6 +343,7 @@ Azure includes hundreds of built-in roles designed for different administrative 
 
 These four roles form the foundation of Azure RBAC and are frequently encountered in enterprise environments.
 
+<img src="screenshots/05-built-in-roles.png" width="auto">
 ---
 
 ## Owner
@@ -355,6 +360,8 @@ Capabilities include:
 - Delegate access to other users
 
 This role should be assigned only to trusted administrators because it includes permission management capabilities.
+
+<img src="screenshots/06-owner-role-details.png" width="auto">
 
 ---
 
@@ -375,6 +382,7 @@ Limitations:
 
 This separation helps organizations enforce the Principle of Least Privilege.
 
+<img src="screenshots/07-contributor-role-details.png" width="auto">
 ---
 
 ## Reader
@@ -396,6 +404,7 @@ Limitations:
 
 Reader is commonly assigned to auditors, security analysts, and monitoring teams.
 
+<img src="screenshots/08-reader-role-details.png" width="auto">
 ---
 
 ## User Access Administrator
@@ -469,12 +478,6 @@ The following concepts were successfully validated during this lab:
 - Subscription-level role assignments are inherited by child Resource Groups.
 - Azure supports multiple principal types including Users, Service Principals, and Managed Identities.
 - The current user possesses Owner permissions inherited throughout the SOC Lab environment.
-
-### Suggested Screenshot
-
-> **Access Control (IAM)** showing the current role assignment and inherited permissions.
-
-This screenshot validates the practical observations without requiring unnecessary portal screenshots.
 
 ---
 
