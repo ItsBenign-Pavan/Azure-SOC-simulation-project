@@ -249,7 +249,8 @@ The Reader role provided full visibility into Microsoft Sentinel resources while
 
 **Screenshot 1 – Reader Role**
 
-![Microsoft Sentinel Reader Validation](screenshots/01-reader-role-validation.png)
+<img src="screenshots/role assignment reader for resource group.png" width="auto">
+<img src="screenshots/sentinel limited control for reader role.png" width="auto">
 
 *The secondary user could successfully access Microsoft Sentinel but was denied permission to create an Analytics Rule.*
 
@@ -281,7 +282,8 @@ The Responder role enabled the analyst to investigate and manage incidents witho
 
 **Screenshot 2 – Responder Role**
 
-![Microsoft Sentinel Responder Validation](screenshots/02-responder-role-validation.png)
+<img src="screenshots/role assignment responder for resource group.png" width="auto">
+<img src="screenshots/sentinel response control for responder role.png" width="auto">
 
 *The secondary user successfully changed the incident status, demonstrating incident management capabilities.*
 
@@ -313,7 +315,8 @@ The Contributor role provided comprehensive management capabilities within Micro
 
 **Screenshot 3 – Contributor Role**
 
-![Microsoft Sentinel Contributor Validation](screenshots/03-contributor-role-validation.png)
+<img src="screenshots/role assignment contributor for resource group.png" width="auto">
+<img src="screenshots/sentinel contributor control for contributor role.png" width="auto">
 
 *The secondary user successfully accessed the Analytics Rule creation page, confirming content management permissions.*
 
@@ -345,7 +348,8 @@ The Automation Contributor role was specifically designed for SOAR operations. T
 
 **Screenshot 4 – Automation Contributor Role**
 
-![Microsoft Sentinel Automation Contributor Validation](screenshots/04-automation-contributor-validation.png)
+<img src="screenshots/role assignment automation contributor for resource group.png" width="auto">
+<img src="screenshots/sentinel contributor control for automation contributor role.png" width="auto">
 
 *The secondary user successfully accessed Automation Rules while remaining restricted from Analytics Rule management.*
 
