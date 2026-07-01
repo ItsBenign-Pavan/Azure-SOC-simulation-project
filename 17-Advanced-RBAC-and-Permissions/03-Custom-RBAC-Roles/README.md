@@ -270,7 +270,7 @@ The successful and failed operations confirm that the custom role correctly enfo
 
 ## Validation Screenshots
 
-### Successful VM Operation
+### Successful VM Access
 
 ![VM Operation Success](screenshots/03-vm-operation-success.png)
 
