@@ -63,7 +63,7 @@ Detection rules are organized by **telemetry source**, allowing engineers to qui
 
 ### Screenshot
 
-![SigmaHQ Repository Structure](images/01-SigmaHQ-Repository-Structure.png)
+![SigmaHQ Repository Structure](screenshots/01-SigmaHQ-Repository-Structure.png)
 
 ---
 
@@ -93,7 +93,7 @@ Understanding these fields allows Detection Engineers to evaluate, customize, an
 
 ### Screenshot
 
-![Sigma Rule Anatomy](images/02-Sigma-Rule-Anatomy.png)
+![Sigma Rule Anatomy](screenshots/02-Analyzing-First-Sigma-Rule.png)
 
 ---
 
@@ -112,6 +112,8 @@ Example conditions include:
 - `selection`
 - `selection and not filter`
 - `1 of selection*`
+
+![Sigma Rule Anatomy](screenshots/03-Sigma-Rule-Review-Checklist.png)
 
 More advanced detection logic and rule creation will be covered in the next module.
 
