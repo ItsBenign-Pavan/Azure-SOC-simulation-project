@@ -153,7 +153,7 @@ sigma list pipelines
 
 ## Screenshot
 
-![Sigma CLI Commands](images/02-SigmaCLI-Commands.png)
+![Sigma CLI Commands](screenshots/02-SigmaCLI-Commands.png)
 
 ---
 
@@ -210,7 +210,7 @@ sigma check rules/windows/process_creation/proc_creation_win_whoami_execution.ym
 
 ## Screenshot
 
-![Sigma Rule Validation](images/03-Sigma-Rule-Validation.png)
+![Sigma Rule Validation](screenshots/03-Sigma-Rule-Validation.png)
 
 ---
 
@@ -260,7 +260,7 @@ sigma check notepad_execution.yml
 
 ## Screenshot
 
-![Custom Sigma Rule](images/04-Custom-Sigma-Rule.png)
+![Custom Sigma Rule](screenshots/04-Custom-Sigma-Rule.png)
 
 ---
 
@@ -301,7 +301,7 @@ sigma check custom_powershell_encoded.yml
 
 ## Screenshot
 
-![Modified Sigma Rule](images/05-Modified-Sigma-Rule.png)
+![Modified Sigma Rule](screenshots/05-Modified-Sigma-Rule.png)
 
 ---
 
@@ -339,7 +339,7 @@ Although the syntax changes, the original detection logic remains unchanged.
 
 ## Screenshot
 
-![Sigma Rule Conversion](images/06-Sigma-Rule-Conversion.png)
+![Sigma Rule Conversion](screenshots/06-Sigma-Rule-Conversion.png)
 
 ---
 
