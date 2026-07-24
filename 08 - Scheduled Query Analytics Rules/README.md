@@ -46,7 +46,7 @@ To continuously evaluate Windows Security Events and identify suspicious authent
 
 ### 📸 Rule Creation
 
-<img src="screenshots/SCR-1.png" alt="SCR-1" width="90%">
+<img src="screenshots/ SCR-1.png" alt="SCR-1" width="90%">
 
 ---
 
