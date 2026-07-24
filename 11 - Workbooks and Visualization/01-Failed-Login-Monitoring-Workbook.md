@@ -25,7 +25,7 @@ The dashboard focuses on Windows failed login events (`EventID 4625`) to help vi
 
 # 📸 Workbook Overview
 
-<img src="screenshots/w1.0.png" width="100%">
+<img src="screenshots/ w1.0.png" width="100%">
 
 ---
 
