@@ -4,19 +4,6 @@
 
 ---
 
-# Table of Contents
-
-- [Overview](#overview)
-- [Lab Objectives](#lab-objectives)
-- [Lab Environment](#lab-environment)
-- [Prerequisites](#prerequisites)
-- [Architecture Workflow](#architecture-workflow)
-- [Step 1 - Validate PowerShell Telemetry](#step-1---validate-powershell-telemetry)
-- [Step 2 - Select Official Sigma Rule](#step-2---select-official-sigma-rule)
-- [Step 3 - Analyze the Sigma Rule](#step-3---analyze-the-sigma-rule)
-
----
-
 # Overview
 
 In the previous module, we learned how Sigma rules are structured and how they can be converted into Microsoft Sentinel compatible Kusto Query Language (KQL).
@@ -135,14 +122,9 @@ Successful results confirmed that PowerShell Operational logs were available for
 
 ---
 
-## Screenshot
-
-```
-Screenshots/01-PowerShell-Telemetry-Validation.png
-```
-
 <p align="center">
-<img src="screenshots/01-PowerShell-Telemetry-Validation.png" width="95%">
+<img src="screenshots/01-PowerShell-Telemetry-Validation1.png" width="95%"> <br><br>
+<img src="screenshots/01-PowerShell-Telemetry-Validation2.png" width="95%">
 </p>
 
 ---
@@ -166,12 +148,6 @@ The detection logic remained unchanged.
 This approach ensures that the deployed detection remains faithful to the original community-maintained Sigma rule.
 
 ---
-
-## Screenshot
-
-```
-Screenshots/02-Official-Sigma-Rule.png
-```
 
 <p align="center">
 <img src="screenshots/02-Official-Sigma-Rule.png" width="95%">
@@ -198,74 +174,13 @@ Understanding the rule before conversion makes troubleshooting significantly eas
 
 ---
 
-## Screenshot
-
-```
-Screenshots/03-Sigma-Rule-Analysis.png
-```
-
 <p align="center">
 <img src="screenshots/03-Sigma-Rule-Analysis.png" width="95%">
 </p>
 
 ---
 
-# Step 4 - Install & Verify Sigma CLI
-
-Sigma CLI is the official command-line utility used to validate, convert, and manage Sigma rules. It converts Sigma rules into SIEM-specific query languages such as Microsoft Sentinel KQL, Splunk SPL, Elastic EQL, and more.
-
----
-
-## Verify Python Installation
-
-Verify that Python is installed.
-
-```powershell
-python --version
-```
-
-Example Output
-
-```text
-Python 3.12.10
-```
-
-> **Note:** Python 3.12.x was used for this lab to ensure compatibility with `pysigma` and `sigma-cli`.
-
----
-
-## Verify Sigma CLI Installation
-
-Confirm that Sigma CLI is installed.
-
-```powershell
-python -m pip show sigma-cli
-```
-
-Example Output
-
-```text
-Name: sigma-cli
-Version: 3.1.0
-```
-
-This confirms that Sigma CLI is available and ready for rule conversion.
-
----
-
-## Verify Available Commands
-
-Display the Sigma CLI help menu.
-
-```powershell
-sigma convert --help
-```
-
-This command lists all supported conversion targets and available options.
-
----
-
-# Step 5 - Convert Sigma Rule to Microsoft Sentinel KQL
+# Step 4 - Convert Sigma Rule to Microsoft Sentinel KQL
 
 After validating the Sigma rule, it was converted into Microsoft Sentinel Kusto Query Language (KQL).
 
@@ -317,19 +232,13 @@ Therefore, the generated query required additional tuning before deployment.
 
 ---
 
-## Screenshot
-
-```
-Screenshots/04-Sigma-to-KQL-Conversion.png
-```
-
 <p align="center">
-<img src="Screenshots/04-Sigma-to-KQL-Conversion.png" width="95%">
+<img src="screenshots/04-Sigma-to-KQL-Conversion.png" width="95%">
 </p>
 
 ---
 
-# Step 6 - Analyze the Generated KQL
+# Step 5 - Analyze the Generated KQL
 
 Before modifying the query, the generated KQL was compared against the available telemetry.
 
@@ -347,7 +256,7 @@ Instead of rewriting the detection logic, only the field extraction mechanism ne
 
 ---
 
-# Step 7 - Inspect Process Creation Events
+# Step 6 - Inspect Process Creation Events
 
 To understand how Sysmon stores process creation information, Event ID 1 records were inspected.
 
@@ -378,7 +287,7 @@ This observation made it possible to extract these values using KQL regular expr
 
 ---
 
-# Step 8 - Extract Required Fields
+# Step 7 - Extract Required Fields
 
 The next step was to extract the required Sigma fields from `RenderedDescription`.
 
@@ -418,7 +327,7 @@ The next phase focuses on adapting the generated KQL, validating the detection, 
 
 ---
 
-# Step 9 - Adapt the Generated KQL
+# Step 8 - Adapt the Generated KQL
 
 The Sigma-generated KQL could not be used directly because it expected normalized process creation fields (`Image`, `CommandLine`, and `OriginalFileName`).
 
@@ -440,7 +349,7 @@ This preserved the original Sigma detection logic while making it compatible wit
 
 ---
 
-# Step 10 - Validate the Detection Incrementally
+# Step 9 - Validate the Detection Incrementally
 
 Instead of pasting the complete Sigma-generated KQL into Sentinel, each detection condition was validated individually.
 
@@ -498,7 +407,7 @@ Event
 
 ---
 
-# Step 11 - Detection Engineering & Query Tuning
+# Step 10 - Detection Engineering & Query Tuning
 
 Although the generated KQL appeared correct, it did **not** initially detect the generated telemetry.
 
@@ -551,7 +460,7 @@ This small adjustment preserved the original detection logic while making it com
 
 ---
 
-# Step 12 - Final Validated KQL
+# Step 11 - Final Validated KQL
 
 After tuning and validating the detection, the following KQL successfully detected encoded PowerShell execution.
 
@@ -596,14 +505,8 @@ The validated query successfully returned the encoded PowerShell execution gener
 
 ---
 
-## Screenshot
-
-```
-Screenshots/05-KQL-Validation-and-Tuning.png
-```
-
 <p align="center">
-<img src="Screenshots/05-KQL-Validation-and-Tuning.png" width="95%">
+<img src="screenshots/05-KQL-Validation-and-Tuning.png" width="95%">
 </p>
 
 ---
@@ -624,7 +527,7 @@ The detection is now ready to be operationalized as a Microsoft Sentinel Schedul
 
 ---
 
-# Step 13 - Create the Scheduled Analytics Rule
+# Step 12 - Create the Scheduled Analytics Rule
 
 After validating the KQL manually, the next step was to operationalize the detection by creating a **Scheduled Analytics Rule** in Microsoft Sentinel.
 
@@ -672,19 +575,13 @@ Including these fields allows analysts to quickly understand why the alert was g
 
 ---
 
-## Screenshot
-
-```
-Screenshots/06-Scheduled-Analytics-Rule.png
-```
-
 <p align="center">
-<img src="Screenshots/06-Scheduled-Analytics-Rule.png" width="95%">
+<img src="screenshots/06-Scheduled-Analytics-Rule.png" width="95%">
 </p>
 
 ---
 
-# Step 14 - Trigger the Detection
+# Step 13 - Trigger the Detection
 
 After enabling the Scheduled Analytics Rule, the encoded PowerShell command was executed once again to generate fresh telemetry.
 
@@ -696,7 +593,7 @@ Once the rule executed according to its configured schedule, Microsoft Sentinel 
 
 ---
 
-# Step 15 - Validate Alert Generation
+# Step 14 - Validate Alert Generation
 
 The alert confirmed that the adapted Sigma detection was functioning correctly within Microsoft Sentinel.
 
@@ -713,19 +610,13 @@ This completed the end-to-end validation of the Sigma detection.
 
 ---
 
-## Screenshot
-
-```
-Screenshots/07-Sentinel-Alert.png
-```
-
 <p align="center">
-<img src="Screenshots/07-Sentinel-Alert.png" width="95%">
+<img src="screenshots/07-Sentinel-Alert.png" width="95%">
 </p>
 
 ---
 
-# Step 16 - Validate Incident Creation
+# Step 15 - Validate Incident Creation
 
 Microsoft Sentinel automatically created an incident from the generated alert.
 
@@ -741,14 +632,8 @@ This confirmed that the complete detection pipeline—from Sigma rule to operati
 
 ---
 
-## Screenshot
-
-```
-Screenshots/08-Sentinel-Incident.png
-```
-
 <p align="center">
-<img src="Screenshots/08-Sentinel-Incident.png" width="95%">
+<img src="screenshots/08-Sentinel-Incident.png" width="95%">
 </p>
 
 ---
@@ -819,13 +704,5 @@ This practical approach demonstrates how Sigma rules can be effectively integrat
 | Attack Simulation Performed | ✅ |
 | Alert Generated | ✅ |
 | Incident Created | ✅ |
-
----
-
-### Next Module
-
-➡ **04 - Custom Detection Engineering & Rule Tuning**
-
-In the next module, the focus shifts from deploying existing Sigma rules to **creating, optimizing, and tuning custom Sigma detections**, including reducing false positives, improving detection fidelity, and validating custom rules within Microsoft Sentinel.
 
 ---
