@@ -72,21 +72,6 @@ By completing this module, you will learn how to:
 | Analytics Type | Scheduled Analytics Rule |
 
 ---
-
-# Prerequisites
-
-Before starting this module, ensure the following components are already configured:
-
-- Azure Subscription
-- Microsoft Sentinel Workspace
-- Windows Server onboarded to Microsoft Sentinel
-- Azure Monitor Agent (AMA)
-- Sysmon installed
-- Sysmon logs successfully ingested into Microsoft Sentinel
-- Sigma CLI installed
-- pySigma configured for Kusto conversion
-
----
 # Implementation
 
 ## Step 1 – Enable Sysmon Process Access (Event ID 10)
@@ -105,12 +90,14 @@ The configuration was updated to specifically monitor access to **LSASS**, reduc
     </ProcessAccess>
 </RuleGroup>
 ```
+![01-sysmon-processaccess-configuration](screenshots/01-sysmon-processaccess-configuration.png)
 
 After updating the configuration, Sysmon was reloaded.
 
 ```powershell
 Sysmon64 -c ".\sysmonconfig.xml"
 ```
+![02-sysmon-configuration-updated](screenshots/02-sysmon-configuration-updated.png)
 
 Successful reload was confirmed by the following output:
 
@@ -118,10 +105,6 @@ Successful reload was confirmed by the following output:
 Configuration file validated.
 Configuration updated.
 ```
-
-> **Screenshot:** `01-sysmon-processaccess-configuration.png`
-
-> **Screenshot:** `02-sysmon-configuration-updated.png`
 
 ---
 
@@ -136,6 +119,7 @@ Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" |
 Where-Object {$_.Id -eq 10} |
 Select-Object -First 5
 ```
+![03-eventid10-generated-local](screenshots/03-eventid10-generated-local.png)
 
 The generated event confirmed that:
 
@@ -152,9 +136,7 @@ Example event fields included:
 - SourceUser
 - TargetUser
 
-> **Screenshot:** `03-eventid10-generated-local.png`
-
-> **Screenshot:** `04-eventid10-details.png`
+![04-eventid10-details](screenshots/04-eventid10-details.png)
 
 ---
 
@@ -181,14 +163,13 @@ Event
     GrantedAccess
 | sort by TimeGenerated desc
 ```
+![05-eventid10-kql-validation](screenshots/05-eventid10-kql-validation.png)
 
 Successful parsing confirmed that:
 
 - Process Access events reached Microsoft Sentinel
 - Required fields were extracted successfully
 - Telemetry was ready for custom detection development
-
-> **Screenshot:** `05-eventid10-kql-validation.png`
 
 ---
 
@@ -238,7 +219,7 @@ Validation completed successfully with:
 Found 0 errors, 0 condition errors and 0 issues.
 ```
 
-> **Screenshot:** `06-custom-sigma-rule.png`
+![06-custom-sigma-rule](screenshots/06-custom-sigma-rule.png)
 
 ---
 
@@ -249,6 +230,7 @@ After validating the Sigma rule, it was converted into Kusto Query Language (KQL
 ```bash
 sigma convert -t kusto proc_access_win_lsass_targeting.yml
 ```
+![07-sigma-kql-conversion](screenshots/07-sigma-kql-conversion.png)
 
 The generated KQL represented the Sigma detection logic:
 
@@ -259,8 +241,6 @@ TargetImage endswith "\\lsass.exe"
 Although the conversion was successful, the generated query assumed native Sysmon field mappings, which differ from the Microsoft Sentinel Event table used in this lab.
 
 Therefore, the generated query served as the baseline detection logic before being adapted for Sentinel.
-
-> **Screenshot:** `07-sigma-kql-conversion.png`
 
 ---
 
@@ -286,6 +266,9 @@ Event
     GrantedAccess
 | sort by TimeGenerated desc
 ```
+![08-final-kql-validation](screenshots/08-final-kql-validation.png)
+
+---
 
 # Step 7 – Create the Scheduled Analytics Rule
 
@@ -321,7 +304,7 @@ The **Host** entity was mapped using the `Computer` field to improve investigati
 
 Once configured, the analytics rule was enabled and became active.
 
-> **Screenshot:** `09-analytics-rule-configuration.png`
+![09-analytics-rule-configuration](screenshots/09-analytics-rule-configuration.png)
 
 ---
 
@@ -368,7 +351,7 @@ Alert
 Incident
 ```
 
-> **Screenshot:** `10-alert-and-incident-generated.png`
+![10-alert-and-incident-generated](screenshots/10-alert-and-incident-generated.png)
 
 ---
 
@@ -384,7 +367,7 @@ This behavior demonstrates an important concept in detection engineering:
 
 Repeated alert generation highlighted the importance of reviewing detection fidelity before considering a rule suitable for production deployment.
 
-> **Screenshot:** `11-repeated-alert-generation.png`
+![11-repeated-alert-generation](screenshots/11-detection-noise-observation.png)
 
 ---
 
@@ -418,7 +401,6 @@ This adaptation preserved the original Sigma detection logic while making it ful
 
 The adapted query was executed successfully and returned the expected Process Access events.
 
-> **Screenshot:** `08-final-kql-validation.png`
 
 # MITRE ATT&CK Mapping
 
@@ -501,69 +483,6 @@ This exercise demonstrates how vendor-neutral detection logic can be transformed
 The next module extends this work by validating the detection against a realistic attack simulation and exploring advanced detection engineering techniques.
 
 ---
-
-# Knowledge Check
-
-### 1. Which Sysmon Event ID records Process Access activity?
-
-**Answer:** Event ID **10**.
-
----
-
-### 2. Why was Sysmon Event ID 10 enabled in this module?
-
-**Answer:** To monitor processes accessing **LSASS**, enabling detection of potential credential access activity.
-
----
-
-### 3. What was the primary purpose of the custom Sigma rule?
-
-**Answer:** To detect any process targeting **lsass.exe** using Sysmon Process Access telemetry.
-
----
-
-### 4. Why couldn't the Sigma-generated KQL be used directly in Microsoft Sentinel?
-
-**Answer:** The generated query assumes native Sysmon field mappings, whereas this lab stores Sysmon events in the **Event** table with fields embedded in `RenderedDescription`. Field extraction was required before applying the detection logic.
-
----
-
-### 5. What utility was used to validate the detection in this module?
-
-**Answer:** **Process Explorer**, which generated legitimate Sysmon Event ID 10 telemetry by accessing LSASS.
-
----
-
-### 6. What MITRE ATT&CK technique does this detection map to?
-
-**Answer:** **T1003.001 – OS Credential Dumping: LSASS Memory**.
-
----
-
-### 7. Why did repeated validation generate multiple alerts?
-
-**Answer:** Because the detection intentionally alerts on **every process targeting LSASS**, including the repeated use of the validation tool (Process Explorer).
-
----
-
-### 8. What is the primary advantage of using Sigma for detection engineering?
-
-**Answer:** Sigma provides a **vendor-neutral detection format** that can be converted into queries for multiple SIEM platforms while maintaining consistent detection logic.
-
----
-
-### 9. What are some common production tuning strategies for this detection?
-
-**Answer:**
-
-- Exclude trusted administrative tools.
-- Exclude approved security software.
-- Filter on suspicious access rights.
-- Correlate with additional telemetry sources.
-- Continuously refine detections based on operational feedback.
-
----
-
 ### 10. What will the next module focus on?
 
 **Answer:** Building upon this custom detection by performing an **end-to-end detection engineering exercise**, validating the detection against a realistic attack simulation and analyzing the resulting alerts and incidents.
