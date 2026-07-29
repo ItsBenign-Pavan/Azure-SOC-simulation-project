@@ -53,6 +53,12 @@ Before starting this module, ensure the following requirements are met:
 
 ---
 
+> [!WARNING]
+> **This module executes Mimikatz to simulate an LSASS credential dumping attack. Perform these steps only in an isolated lab environment under your control or with explicit authorization. Never execute these techniques against production systems.**
+
+
+---
+
 ## Step 1 – Prepare Mimikatz
 
 Download the latest Mimikatz release from the official repository and extract it to the Windows VM.
@@ -64,10 +70,6 @@ C:\Tools\Mimikatz\
 ```
 
 This module uses Mimikatz solely for generating controlled telemetry to validate Microsoft Sentinel detections.
-
-> **Note**
->
-> This activity should only be performed inside an isolated lab environment.
 
 ### Screenshot
 
