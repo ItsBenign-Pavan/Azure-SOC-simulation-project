@@ -708,3 +708,42 @@ Each module follows a consistent documentation structure to ensure repeatability
 
 > [!IMPORTANT]
 > Every alert, detection, investigation, and automation workflow included in this repository has been implemented in a controlled lab environment for educational and defensive security purposes.
+
+---
+---
+
+# 📂 Interactive Module Directory
+
+> [!TIP]
+> The project is organized as a progressive learning path. Each module builds upon the previous one, taking you from Azure deployment to advanced detection engineering and SOC automation.
+
+| Module | Focus Area | Key Topics |
+|:------:|------------|------------|
+| **01** | ☁️ **Azure Setup** | Subscription, Resource Groups, Networking |
+| **02** | 🛡️ **Sentinel Configuration** | Log Analytics Workspace, Microsoft Sentinel |
+| **03** | 🔌 **Data Connectors** | Azure & Microsoft Security Data Sources |
+| **04** | ✅ **Security Data Validation** | Verify Telemetry & Log Ingestion |
+| **05** | 💻 **Virtual Machines Deployment** | Windows Server & Ubuntu Configuration |
+| **06** | 📡 **Endpoint Telemetry Validation** | Windows Events, Sysmon, Linux Syslog |
+| **07** | 📥 **Custom Log Ingestion** | Data Collection Rules & Custom Tables |
+| **08** | ⚡ **Scheduled Query Analytics Rules** | Scheduled Detection Engineering |
+| **09** | 🚨 **NRT Analytics Rules & Incident Creation** | Near Real-Time Detection |
+| **10** | 🔍 **Incident Investigation & Analysis** | Alert Triage & Investigation |
+| **11** | 📊 **Workbooks & Visualization** | Dashboards & Operational Visibility |
+| **12** | 🤖 **Automation Rules** | Incident Automation & SOC Efficiency |
+| **13** | 🔄 **Logic Apps & Playbooks** | Automated Investigation & Response |
+| **14** | 📋 **Watchlists** | Context Enrichment & Detection |
+| **15** | ⚔️ **Attack Simulations** | Detection Validation Using Realistic Attacks |
+| **16** | 🛡️ **Network Security & Firewalling** | Windows Firewall, UFW & Network Monitoring |
+| **17** | 👥 **Advanced RBAC & Permissions** | Identity, Roles & Least Privilege |
+| **18** | 📜 **Detection Engineering with Sigma Rules** | Sigma Development, Conversion & Validation |
+
+---
+
+### ⭐ Additional Resources
+
+| Resource | Description |
+|----------|-------------|
+| ⭐ **KQL Mastery** | Comprehensive Kusto Query Language reference with practical examples |
+| 🏗️ **Architecture Flowcharts** | Visual representation of the SOC architecture and workflows |
+| 📄 **Project Documentation** | Supporting diagrams, tables, and reference material |
