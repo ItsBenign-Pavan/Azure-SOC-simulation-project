@@ -2,19 +2,9 @@
 
 This directory contains comprehensive threat simulation scenarios designed to demonstrate real-world attack techniques and their detection methodologies within a SOC environment. Each module provides practical examples, detection strategies, and monitoring guidance.
 
-## Table of Contents
-
-- [01 - PowerShell Attack Simulation](#01---powershell-attack-simulation)
-- [02 - Reverse Shell & C2 Callback Simulation & Detection](#02---reverse-shell--c2-callback-simulation--detection)
-- [03 - LOLBins Certutil Abuse](#03---lolbins-certutil-abuse)
-- [04 - ClickFix RunMRU Detection Simulation](#04---clickfix-runmru-detection-simulation)
-- [05 - Multi-Stage Malware Delivery & Persistence Simulation](#05---multi-stage-malware-delivery--persistence-simulation)
-
 ---
 
 ## 01 - PowerShell Attack Simulation
-
-**Directory:** `01-PowerShell-Attack-Simulation`
 
 PowerShell is a powerful scripting language frequently abused by attackers for reconnaissance, execution, and persistence. This module simulates common PowerShell-based attack techniques and demonstrates how to detect suspicious PowerShell activities through log analysis and behavioral monitoring.
 
@@ -25,11 +15,11 @@ PowerShell is a powerful scripting language frequently abused by attackers for r
 - Anomalous PowerShell process behaviors
 - Command line parameter analysis
 
+[![Visit Module](https://img.shields.io/badge/Visit%20Module-→-blue?style=for-the-badge)](./01-PowerShell-Attack-Simulation)
+
 ---
 
 ## 02 - Reverse Shell & C2 Callback Simulation & Detection
-
-**Directory:** `02-Reverse-Shell-C2-Callback-Simulation-Detection`
 
 This module focuses on simulating reverse shell connections and Command & Control (C2) callback communications. It covers the detection and monitoring of compromised systems attempting to establish outbound connections to attacker-controlled infrastructure.
 
@@ -41,11 +31,11 @@ This module focuses on simulating reverse shell connections and Command & Contro
 - Indicators of Compromise (IoCs) for C2 infrastructure
 - Beaconing detection and analysis
 
+[![Visit Module](https://img.shields.io/badge/Visit%20Module-→-blue?style=for-the-badge)](./02-Reverse-Shell-C2-Callback-Simulation-Detection)
+
 ---
 
 ## 03 - LOLBins Certutil Abuse
-
-**Directory:** `03-LOLBins-Certutil-Abuse`
 
 Living Off the Land Binaries (LOLBins) are legitimate Windows system binaries that attackers abuse to evade detection. This module specifically focuses on `certutil.exe` abuse, a common technique used for malware download and execution without triggering traditional security alerts.
 
@@ -57,11 +47,11 @@ Living Off the Land Binaries (LOLBins) are legitimate Windows system binaries th
 - Encoding/decoding abuse patterns
 - Application whitelisting evasion
 
+[![Visit Module](https://img.shields.io/badge/Visit%20Module-→-blue?style=for-the-badge)](./03-LOLBins-Certutil-Abuse)
+
 ---
 
 ## 04 - ClickFix RunMRU Detection Simulation
-
-**Directory:** `04-ClickFix-RunMRU-Detection-Simulation`
 
 ClickFix is a social engineering attack that tricks users into executing malicious commands via the Windows Run dialog. This module simulates ClickFix attacks and demonstrates detection through RunMRU (Run Most Recently Used) registry key analysis and user activity monitoring.
 
@@ -73,11 +63,11 @@ ClickFix is a social engineering attack that tricks users into executing malicio
 - Registry key change tracking
 - Behavioral analytics for suspicious executions
 
+[![Visit Module](https://img.shields.io/badge/Visit%20Module-→-blue?style=for-the-badge)](./04-ClickFix-RunMRU-Detection-Simulation)
+
 ---
 
 ## 05 - Multi-Stage Malware Delivery & Persistence Simulation
-
-**Directory:** `05-Multi-Stage-Malware-Delivery-Persistence-Simulation`
 
 This advanced module simulates sophisticated multi-stage malware attacks that involve initial delivery, execution, persistence establishment, and lateral movement. It provides a holistic view of the attack chain and detection opportunities at each stage.
 
@@ -89,6 +79,8 @@ This advanced module simulates sophisticated multi-stage malware attacks that in
 - File system and registry modifications
 - Behavioral threat indicators across the attack chain
 - End-to-end detection strategy
+
+[![Visit Module](https://img.shields.io/badge/Visit%20Module-→-blue?style=for-the-badge)](./05-Multi-Stage-Malware-Delivery-Persistence-Simulation)
 
 ---
 
