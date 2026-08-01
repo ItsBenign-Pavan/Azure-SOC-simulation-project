@@ -8,7 +8,7 @@
 
 <p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&pause=1200&color=0078D4&center=true&vCenter=true&width=900&lines=Microsoft+Sentinel;Detection+Engineering;Threat+Hunting;Incident+Response;Kusto+Query+Language+(KQL);Sigma+Rules;Microsoft+Defender+XDR;Azure+Security;Attack+Simulation"/>
+<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&pause=100&color=0078D4&center=true&vCenter=true&width=900&lines=Microsoft+Sentinel;Detection+Engineering;Threat+Hunting;Incident+Response;Kusto+Query+Language+(KQL);Sigma+Rules;Microsoft+Defender+XDR;Azure+Security;Attack+Simulation"/>
 
 </p>
 
