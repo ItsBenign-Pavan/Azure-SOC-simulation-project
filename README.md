@@ -1,116 +1,98 @@
-## 🎯 Project Objectives
+<div align="center">
 
-This project is designed to simulate a real-world SOC environment by focusing on **threat detection, investigation, and response** rather than just resource deployment.
+# 🛡️ Azure SOC Simulation Project
 
-Key objectives include:
+### Building an Enterprise-Grade Security Operations Center on Microsoft Azure
 
-- 🔍 **Simulate Real Attack Scenarios**
-  - Generate brute-force login attempts (Event ID 4625)
-  - Emulate suspicious activity on a monitored VM
+*A hands-on cybersecurity project covering telemetry engineering, detection engineering, threat hunting, incident response, automation, and attack simulation using Microsoft Sentinel.*
 
-- 📥 **Centralize and Normalize Logs**
-  - Ingest Windows Security Events into Log Analytics Workspace
-  - Ensure visibility across endpoints using Microsoft Sentinel
+<p>
 
-- 🧠 **Develop Threat Detection Logic**
-  - Write KQL queries to identify anomalies and suspicious patterns
-  - Detect brute-force attempts, account misuse, and abnormal behaviors
+<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&pause=1200&color=0078D4&center=true&vCenter=true&width=900&lines=Microsoft+Sentinel;Detection+Engineering;Threat+Hunting;Incident+Response;Kusto+Query+Language+(KQL);Sigma+Rules;Microsoft+Defender+XDR;Azure+Security;Attack+Simulation"/>
 
-- 🚨 **Build Detection & Alerting Mechanisms**
-  - Create analytics rules to trigger alerts based on attack patterns
-  - Tune rules to reduce false positives
+</p>
 
-- 🧾 **Perform Incident Investigation**
-  - Analyze alerts generated in Microsoft Sentinel
-  - Correlate logs to understand attack timeline and impact
+<p>
 
-- ⚡ **Automate Response (SOAR)**
-  - Design playbooks using Logic Apps
-  - Automate actions like alert notifications or IP blocking
+<img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
+<img src="https://img.shields.io/badge/Microsoft_Sentinel-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white"/>
+<img src="https://img.shields.io/badge/Defender_XDR-00A4EF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/KQL-512BD4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Sigma-1E293B?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Sysmon-FFB900?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Windows_Server-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
 
-- 🎯 **Map Detections to MITRE ATT&CK Framework**
-  - Align attack simulations with real-world tactics (e.g., Credential Access, Initial Access)
+</p>
 
-- 📊 **Build Security Visibility**
-  - Create dashboards/workbooks for monitoring threats and trends
+</div>
 
 ---
 
-## 🛠️ Tools & Services Used
-- Microsoft Azure
-- Microsoft Sentinel
-- Log Analytics Workspace
-- Azure Virtual Machines (Windows)
-- Network Security Groups (NSG)
-- Kusto Query Language (KQL)
+> [!IMPORTANT]
+>
+> This repository documents the complete process of designing, building, and operating a cloud-native **Security Operations Center (SOC)** on **Microsoft Azure** using **Microsoft Sentinel** and **Microsoft Defender XDR**.
+>
+> The project follows the same operational lifecycle used in modern SOC environments—from infrastructure deployment and telemetry engineering to detection development, threat hunting, incident investigation, automation, and attack simulation.
 
 ---
 
-## 🏗️ Lab Architecture
-*(Add architecture diagram in `/architecture` folder)*
+## 📊 Project Snapshot
 
-**Example flow:**
-VM → Log Analytics Agent → Log Analytics Workspace → Microsoft Sentinel → Alerts & Incidents
-
----
-
-## 📂 Project Structure
-azure-soc-lab/<br>
-│<br>
-├── README.md<br>
-├── architecture/<br>
-├── screenshots/<br>
-│<br>
-├── 01-azure-setup/<br>
-├── 02-virtual-machine/<br>
-├── 03-sentinel-setup/<br>
-├── 04-log-ingestion/<br>
-├── 05-kql-queries/<br>
-├── 06-detection-rules/<br>
-├── 07-incident-response/<br>
-├── 08-playbooks/<br>
-
+| Category | Overview |
+|-----------|----------|
+| 🎯 Goal | Build and document an enterprise-inspired Security Operations Center |
+| ☁️ Platform | Microsoft Azure |
+| 🛡️ SIEM | Microsoft Sentinel |
+| 🖥️ Operating Systems | Windows Server & Ubuntu Linux |
+| 📡 Telemetry | Windows Events • Sysmon • Syslog • UFW |
+| 🔍 Detection | KQL • Analytics Rules • Sigma Rules |
+| ⚔️ Validation | Controlled Attack Simulations |
+| 🤖 Automation | Automation Rules • Logic Apps |
+| 📚 Approach | Documentation-First Learning |
 
 ---
 
-## 🚀 Project Milestones
+## 🌟 Repository Highlights
 
-### 1️⃣ Azure Environment Setup
-- Created Azure account and configured resource group
+| 🏗️ Build | 📡 Collect | 🔍 Detect | 🧪 Validate |
+|:---------:|:---------:|:---------:|:-----------:|
+| Azure Infrastructure | Windows & Linux Telemetry | KQL & Sigma Rules | Attack Simulations |
 
-### 2️⃣ Virtual Machine Deployment
-- Deployed Windows VM  
-- Configured RDP access and NSG rules  
-
-### 3️⃣ Microsoft Sentinel Setup
-- Created Log Analytics Workspace  
-- Enabled Microsoft Sentinel  
-
-### 4️⃣ Log Ingestion
-- Connected VM to Log Analytics  
-- Verified security logs ingestion  
-
-### 5️⃣ KQL Queries
-- Wrote queries to detect:
-  - Failed login attempts
-  - Suspicious activity  
-
-### 6️⃣ Detection Rules
-- Created analytics rules based on KQL queries  
-- Generated alerts for suspicious events  
-
-### 7️⃣ Incident Response
-- Investigated alerts inside Sentinel  
-- Analyzed logs and event patterns  
-
-### 8️⃣ Playbooks (Optional/Upcoming)
-- Automating response using Logic Apps  
+| 🚨 Investigate | 🤖 Automate | 📖 Document | 🎯 Improve |
+|:--------------:|:-----------:|:-----------:|:----------:|
+| Threat Hunting | Logic Apps | Step-by-Step Guides | Detection Engineering |
 
 ---
 
-## 🔍 Sample KQL Query
-```kql
-SecurityEvent
-| where EventID == 4625
-| summarize FailedAttempts = count() by Account
-| sort by FailedAttempts desc
+## 💼 Skills Demonstrated
+
+| Domain | Technologies & Concepts |
+|---------|-------------------------|
+| ☁️ Cloud | Azure • Azure Monitor • Log Analytics • Data Collection Rules |
+| 🛡️ Security | Microsoft Sentinel • Defender XDR • Microsoft Entra ID |
+| 📡 Telemetry | Sysmon • Windows Event Logs • Syslog • UFW Firewall |
+| 🔍 Detection | KQL • Sigma Rules • Analytics Rules • MITRE ATT&CK |
+| 🚨 SOC Operations | Threat Hunting • Incident Response • Investigation • Automation |
+
+---
+
+## 🎯 Project Philosophy
+
+Unlike repositories that focus primarily on product configuration, this project emphasizes the complete engineering workflow behind modern security operations.
+
+Every module is built around four principles:
+
+| 📖 Learn | 🛠️ Build | 🧪 Validate | 📚 Document |
+|:---------:|:---------:|:-----------:|:-----------:|
+| Understand the concept | Configure the solution | Verify using live telemetry | Create reusable documentation |
+
+---
+
+> [!NOTE]
+>
+> Every module is independently documented with architecture, implementation, validation, troubleshooting, detection logic, lessons learned, and practical references to create a reusable knowledge base rather than a collection of isolated lab exercises.
+
+---
+
+⬇️ **Continue below to explore the complete SOC architecture, learning roadmap, and interactive module dashboard.**
