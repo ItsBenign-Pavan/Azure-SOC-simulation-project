@@ -104,7 +104,7 @@ Microsoft-Windows-Sysmon/Operational!*
 
 ## Screenshot
 
-<img src="screenshots/sysmon-logs.png" width="80%">
+<img src=".screenshots/sysmon-logs.png" width="80%">
 
 ---
 
